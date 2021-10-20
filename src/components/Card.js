@@ -5,36 +5,31 @@ const UserProfile = ({ imageUrl, name, description }) => {
   if (!name) return <p>card has no name</p>
 
   return (
-    <div
-      style={{
-        margin: "0 auto"
-      }}
-    >
+    <div style={{ display: "flex", justifyContent: "center" }}>
       <div
         style={{
-          margin: "em",
+          margin: "1em",
           backgroundColor: "#05DBF2",
           borderRadius: "15px",
           width: "300px"
         }}
       >
-        <div>
-          <img
-            style={{
-              marginBottom: "0.25em",
-              borderRadius: "15px 15px 0 0",
-              width: "100%",
-              height: "350px",
-              objectFit: "cover",
-              marginBottom: "0.5em"
-            }}
-            alt="profile picture"
-            src={imageUrl}
-          ></img>
-        </div>
+        <img
+          style={{
+            marginBottom: "0.25em",
+            borderRadius: "15px 15px 0 0",
+            width: "100%",
+            height: "350px",
+            objectFit: "cover",
+            marginBottom: "0.5em",
+            gap: "1em"
+          }}
+          alt="profile picture"
+          src={imageUrl}
+        ></img>
         <div style={{ textAlign: "center" }}>
           <h2 style={{ marginBottom: "0.5em" }}>{name}</h2>
-          <p style={{ marginBottom: "1em" }}>{description}</p>
+          <p>{description}</p>
         </div>
       </div>
     </div>
