@@ -8,7 +8,7 @@ yarn-error.log*
 # IDE and editors
 .idea
 .vscode
-
+src/pages/testi.jsx
 # Runtime data
 pids
 *.pid
