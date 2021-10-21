@@ -1,5 +1,5 @@
 import React from "react"
-
+import logo from "../images/tres-logo.png"
 
 const TestPage = () => {
   const style = {
@@ -12,14 +12,13 @@ const TestPage = () => {
     float: "right",
     display: "flex",
     flexDirection: "row-reverse",
-    gap: "20px",
     margin: "auto",
   }
   const buttonStyle = {
     items: "center",
     textAlign: "center",
-
   }
+
   const items = [
     {name: "Eka"},
     {name: "Toka"},
@@ -29,10 +28,12 @@ const TestPage = () => {
 
   return (
     <div style={style}>
+      <img src={logo} alt="logo" style={{height: "100%"}}/>
+
       <div style={gridStyle}>
         {items.map((item, index) =>(
           <div style={buttonStyle} key={index}>
-            <p className={[{verticalAlign: "middle"}, {textAlign: "center"}]}>{item.name}</p>
+            <p style={{verticalAlign: "middle", textAlign: "center"}}>{item.name}</p>
           </div>
         ))}
       </div>
