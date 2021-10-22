@@ -1,6 +1,46 @@
-/*Tää CSS lisätää Layouttii, joten se päätyy joka sivulle*/
+/*
+Sininen: #083D77
+Vaalean sininen: #0C3DFF
+Turkoosi: #05DBF2
+Valkonen: #FFFDF3
+Pinkki: #FC51BB
+*/
 
+/* Tää CSS lisätää Layouttii, joten se päätyy joka sivulle */
 body {
   margin: 0;
   padding: 0;
+
+  background-color: white;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Värejä elementteihin */
+
+header {
+  background-color: #fc51bb;
+}
+p,
+article {
+  color: #0c3dff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+}
+a {
+  color: #fffdf3;
+  text-decoration: none;
+}
+a:hover {
+  color: #05dbf2;
 }
