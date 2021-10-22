@@ -1,9 +1,9 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import Navbar from "./Navbar"
 
 const Header = () => {
-  return <div></div>
+  return <Navbar></Navbar>
 }
 
 Header.propTypes = {
