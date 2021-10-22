@@ -1,10 +1,9 @@
 import React from "react"
-import logo from "../images/tres-logo.png"
+import logo from "../images/Logo2-Dark.png"
 
 const TestPage = () => {
   const style = {
     backgroundColor: "#083D77",
-    height: "50px",
   }
   const gridStyle ={
     backgroundColor: "red",
@@ -12,6 +11,7 @@ const TestPage = () => {
     float: "right",
     display: "flex",
     flexDirection: "row-reverse",
+    justifyContent: "space-between",
     margin: "auto",
   }
   const buttonStyle = {
@@ -28,7 +28,7 @@ const TestPage = () => {
 
   return (
     <div style={style}>
-      <img src={logo} alt="logo" style={{height: "100%"}}/>
+      <img src={logo} alt="logo" style={{height: "70%", padding: "5px"}}/>
 
       <div style={gridStyle}>
         {items.map((item, index) =>(
