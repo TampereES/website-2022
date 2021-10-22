@@ -1,0 +1,21 @@
+h3 {
+  color: white;
+}
+
+.footer-column {
+  width: 15%;
+  padding-bottom: 1.5em;
+}
+
+.footer-link-styles {
+  display: grid;
+  row-gap: 0.5em;
+}
+
+a {
+  color: #fffdf3;
+  text-decoration: none;
+}
+a:hover {
+  color: aqua;
+}
