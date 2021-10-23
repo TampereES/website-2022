@@ -6,6 +6,11 @@ Valkonen: #FFFDF3
 Pinkki: #FC51BB
 */
 
+.container {
+  width: "960px";
+  margin: "0 auto";
+}
+
 /* Tää CSS lisätää Layouttii, joten se päätyy joka sivulle */
 body {
   margin: 0;
