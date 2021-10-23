@@ -5,11 +5,7 @@ import "./styles/footer.css"
 
 const Footer = () => {
   return (
-    <footer
-      style={{
-        backgroundColor: "#083D77"
-      }}
-    >
+    <footer>
       <Container
         style={{
           display: "flex",

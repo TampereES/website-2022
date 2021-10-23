@@ -4,17 +4,11 @@ import logo from "../images/Logo2-Dark.png"
 
 const Navbar = () => {
   const gridStyle = {
-    backgroundColor: "red",
-    width: "500px",
     float: "right",
     display: "flex",
     flexDirection: "row-reverse",
     justifyContent: "space-between",
     margin: "auto"
-  }
-  const buttonStyle = {
-    items: "center",
-    textAlign: "center"
   }
 
   const items = [
@@ -29,7 +23,7 @@ const Navbar = () => {
 
       <div style={gridStyle}>
         {items.map((item, index) => (
-          <div style={{ verticalAlign: "middle", textAlign: "center" }}>
+          <div className="nav-link">
             <Link href={item.link} local>
               {item.name}
             </Link>
