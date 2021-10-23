@@ -12,12 +12,15 @@ import "./styles/global.css"
 import Footer from "./Footer"
 
 import Header from "./header"
+import Container from "./Container"
 
 const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main>
+        <Container>{children}</Container>
+      </main>
       <Footer />
     </>
   )

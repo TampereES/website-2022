@@ -1,3 +1,7 @@
+import React from "react"
+import Link from "../components/Link"
+import logo from "../images/Logo2-Dark.png"
+
 const Navbar = () => {
   const gridStyle = {
     backgroundColor: "red",
@@ -20,8 +24,8 @@ const Navbar = () => {
   ]
 
   return (
-    <div style={style}>
-      <img src={logo} alt="logo" style={{ height: "20%", padding: "5px" }} />
+    <div>
+      <img src={logo} alt="logo" style={{ height: "100px", padding: "5px" }} />
 
       <div style={gridStyle}>
         {items.map((item, index) => (
