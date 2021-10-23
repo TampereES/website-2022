@@ -7,12 +7,11 @@
 
 import * as React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-import "./styles/global.css"
-import Footer from "./Footer"
-
+import Footer from "@/components/Footer"
 import Header from "./header"
 import Container from "./Container"
+
+import "../styles/global.css"
 
 const Layout = ({ children }) => {
   return (
