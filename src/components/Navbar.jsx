@@ -1,7 +1,5 @@
 import React from "react"
 import Link from "../components/Link"
-import logo from "../images/Logo2-Dark.png"
-import "./styles/navbar.css"
 
 const Navbar = () => {
   const items = [
@@ -13,7 +11,6 @@ const Navbar = () => {
 
   return (
     <nav>
-      <img className="nav-logo" src={logo} alt="logo" />
       <div className="nav-links">
         {items.map(item => (
           <div className="nav-link-div">

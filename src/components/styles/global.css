@@ -19,11 +19,39 @@ body {
   margin: 0 auto;
 }
 
+.nav-logo {
+  height: 70px;
+  padding: 1.5em 0;
+}
+nav {
+  width: 100%;
+  margin: 0 2em;
+}
+
+.nav-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  vertical-align: middle;
+  text-align: center;
+}
+
+.nav-link-div {
+  margin: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
 /* Värejä elementteihin */
 
 header {
   background-color: #083d77;
 }
+
+header .container {
+  display: flex;
+  align-items: center;
+}
+
 p,
 article {
   color: #0c3dff;

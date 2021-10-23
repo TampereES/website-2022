@@ -8,7 +8,7 @@ const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
 
-    <p style={{ height: "600px" }}> Tervetuloa etusivulle. Work in progress</p>
+    <p> Tervetuloa etusivulle. Work in progress</p>
   </Layout>
 )
 
