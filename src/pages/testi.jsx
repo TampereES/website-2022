@@ -1,5 +1,6 @@
 import React from "react"
 import logo from "../images/Logo2-Dark.png"
+import Link from "../components/Link"
 
 const TestPage = () => {
   const style = {
@@ -20,20 +21,19 @@ const TestPage = () => {
   }
 
   const items = [
-    {name: "Eka"},
-    {name: "Toka"},
-    {name: "Kolmas"},
-    {name: "Viides"},
+    {name: "About", link: "/about"},
+    {name: "Projects", link: "/projects"},
+    {name: "Contact", link: "/contact"},
   ]
 
   return (
     <div style={style}>
-      <img src={logo} alt="logo" style={{height: "70%", padding: "5px"}}/>
+      <img src={logo} alt="logo" style={{height: "20%", padding: "5px"}}/>
 
       <div style={gridStyle}>
         {items.map((item, index) =>(
-          <div style={buttonStyle} key={index}>
-            <p style={{verticalAlign: "middle", textAlign: "center"}}>{item.name}</p>
+            <div style={{verticalAlign: "middle", textAlign: "center"}}>
+            <Link href={item.link} local>{item.name}</Link></div>
           </div>
         ))}
       </div>
