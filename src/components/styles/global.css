@@ -22,7 +22,7 @@ body {
 /* Värejä elementteihin */
 
 header {
-  background-color: #fc51bb;
+  background-color: #083d77;
 }
 p,
 article {
@@ -43,4 +43,8 @@ a {
 }
 a:hover {
   color: #05dbf2;
+}
+
+footer {
+  background-color: #083d77;
 }

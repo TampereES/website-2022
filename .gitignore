@@ -11,7 +11,7 @@ src/pages/testi.jsx
 # IDE and editors
 .idea
 .vscode
-
+src/pages/testi.jsx
 # Runtime data
 pids
 *.pid
