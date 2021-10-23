@@ -1,36 +1,29 @@
 import React from "react"
 import Link from "../components/Link"
 import logo from "../images/Logo2-Dark.png"
+import "./styles/navbar.css"
 
 const Navbar = () => {
-  const gridStyle = {
-    float: "right",
-    display: "flex",
-    flexDirection: "row-reverse",
-    justifyContent: "space-between",
-    margin: "auto"
-  }
-
   const items = [
+    { name: "Home", link: "/" },
     { name: "About", link: "/about" },
     { name: "Projects", link: "/projects" },
     { name: "Contact", link: "/contact" }
   ]
 
   return (
-    <div>
-      <img src={logo} alt="logo" style={{ height: "100px", padding: "5px" }} />
-
-      <div style={gridStyle}>
-        {items.map((item, index) => (
-          <div className="nav-link">
+    <nav>
+      <img className="nav-logo" src={logo} alt="logo" />
+      <div className="nav-links">
+        {items.map(item => (
+          <div className="nav-link-div">
             <Link href={item.link} local>
               {item.name}
             </Link>
           </div>
         ))}
       </div>
-    </div>
+    </nav>
   )
 }
 
