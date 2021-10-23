@@ -1,7 +1,7 @@
 import React from "react"
 import Container from "./Container.jsx"
-import Link from "./Link.jsx"
-import "./styles/footer.css"
+import Link from "@/components/Link.jsx"
+import "../styles/footer.css"
 
 const Footer = () => {
   const structure = [
@@ -52,11 +52,11 @@ const Footer = () => {
         {structure.map(group => {
           return (
             <div className="footer-column">
-              <h3>Navigation</h3>
+              <h3>{group.name}</h3>
               <div className="footer-link-styles">
                 {group.contents.map(link => {
                   return (
-                    <Link href={link.link} local>
+                    <Link href={link.link} local={link.localLink}>
                       {link.name}
                     </Link>
                   )
