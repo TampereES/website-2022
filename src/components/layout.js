@@ -16,13 +16,13 @@ import Container from "./Container"
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div className="page-container">
       <Header />
       <main>
         <Container>{children}</Container>
       </main>
       <Footer />
-    </>
+    </div>
   )
 }
 
