@@ -4,6 +4,43 @@ import Link from "./Link.jsx"
 import "./styles/footer.css"
 
 const Footer = () => {
+  const structure = [
+    {
+      name: "Navigation",
+      contents: [
+        { name: "Home", link: "/", localLink: true },
+        { name: "Projects", link: "/projects", localLink: true },
+        { name: "About us", link: "/about", localLink: true }
+        // { name: "News", link: "/news", localLink: true }
+      ]
+    },
+    {
+      name: "Social media",
+      contents: [
+        { name: "Instagram", link: "https://www.instagram.com/tamperees/" },
+        { name: "Facebook", link: "https://www.facebook.com/TampereES" },
+        { name: "Twitter", link: "https://twitter.com/TampereES" },
+        { name: "LinkedIn", link: "https://www.linkedin.com/company/tamperees" }
+      ]
+    },
+    {
+      name: "Partners",
+      contents: [
+        { name: "Tribe Tampere", link: "https://tribetampere.com/" },
+        { name: "HUBS", link: "https://hubs.fi" },
+        { name: "Business Tampere", link: "https://businesstampere.com/" },
+        { name: "University of Tampere", link: "https://tuni.fi" }
+      ]
+    },
+    {
+      name: "Get involved",
+      contents: [
+        { name: "Telegram", link: "" },
+        { name: "Mail", link: "" }
+      ]
+    }
+  ]
+
   return (
     <footer>
       <Container
@@ -12,50 +49,22 @@ const Footer = () => {
           justifyContent: "center"
         }}
       >
-        <div className="footer-column">
-          <h3>Navigation</h3>
-          <div className="footer-link-styles">
-            <Link href="/" local>
-              Home
-            </Link>
-            <Link href="/projects" local>
-              Projects
-            </Link>
-            <Link href="/about" local>
-              About us
-            </Link>
-            {/* <Link href="/news" local>
-            News
-          </Link> */}
-          </div>
-        </div>
-        <div className="footer-column">
-          <h3>Social media</h3>
-          <div className="footer-link-styles">
-            <Link href="https://www.instagram.com/tamperees/">Instagram</Link>
-            <Link href="https://www.facebook.com/TampereES">Facebook</Link>
-            <Link href="https://twitter.com/TampereES">Twitter</Link>
-            <Link href="https://www.linkedin.com/company/tamperees">
-              LinkedIn
-            </Link>
-          </div>
-        </div>
-        <div className="footer-column">
-          <h3>Partners</h3>
-          <div className="footer-link-styles">
-            <Link href="https://tribetampere.com/">Tribe Tampere</Link>
-            <Link href="https://hubs.fi">HUBS</Link>
-            <Link href="https://businesstampere.com/">Business Tampere</Link>
-            <Link href="https://tuni.fi">University of Tampere</Link>
-          </div>
-        </div>
-        <div className="footer-column">
-          <h3>Get involved</h3>
-          <div className="footer-link-styles">
-            <Link href="">Telegram</Link>
-            <Link href="">Mail</Link>
-          </div>
-        </div>
+        {structure.map(group => {
+          return (
+            <div className="footer-column">
+              <h3>Navigation</h3>
+              <div className="footer-link-styles">
+                {group.contents.map(link => {
+                  return (
+                    <Link href={link.link} local>
+                      {link.name}
+                    </Link>
+                  )
+                })}
+              </div>
+            </div>
+          )
+        })}
       </Container>
     </footer>
   )
