@@ -1,15 +1,15 @@
-import * as React from "react"
 import PropTypes from "prop-types"
-import Navbar from "./Navbar"
-import Container from "./Container"
-
+import * as React from "react"
 import logo from "../images/Logo2-Dark.png"
+import Container from "./Container"
+import Navbar from "./Navbar"
+import Image from "next/image"
 
 const Header = () => {
   return (
     <header>
-      <Container>
-        <img className="nav-logo" src={logo} alt="logo" />
+      <Container style={{ display: "flex", justifyContent:"center" }}>
+        <Image src={logo} objectFit="contain" height="60px" width="200px" alt="logo" />
         <Navbar />
       </Container>
     </header>

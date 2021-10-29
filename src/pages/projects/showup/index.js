@@ -1,11 +1,9 @@
 import React from "react"
-import Layout from "../../../components/layout"
-import Seo from "../../../components/seo"
+import Layout from "../../../components/Layout"
 
 function ProjectsPage() {
   return (
     <Layout>
-      <Seo title="ShowUp" />
       Terve! Tää on projektisivu
     </Layout>
   )
