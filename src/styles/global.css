@@ -6,6 +6,8 @@ Valkonen: #FFFDF3
 Pinkki: #FC51BB
 */
 
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap");
+
 /* Tää CSS lisätää Layouttii, joten se päätyy joka sivulle */
 body {
   margin: 0;
@@ -19,10 +21,6 @@ body {
   margin: 0 auto;
 }
 
-.nav-logo {
-  height: 70px;
-  padding: 1.5em 0;
-}
 nav {
   width: 100%;
   margin: 0 2em;
@@ -37,8 +35,11 @@ nav {
 
 .nav-link-div {
   margin: 1em;
-  font-size: 1.5em;
-  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.nav-link-div:hover {
+  font-weight: bolder;
 }
 
 /* Värejä elementteihin */
@@ -63,13 +64,13 @@ h3,
 h4,
 h5,
 h6 {
-  color: white;
+  color: rgb(247, 235, 235);
 }
 a {
   color: #fffdf3;
   text-decoration: none;
 }
-a:hover {
+footer a:hover {
   color: #05dbf2;
 }
 
@@ -85,4 +86,14 @@ main {
 
 footer {
   background-color: #083d77;
+}
+
+.footer-column {
+  width: 25%;
+  padding-bottom: 1.5em;
+}
+
+.footer-link-styles {
+  display: grid;
+  row-gap: 0.5em;
 }

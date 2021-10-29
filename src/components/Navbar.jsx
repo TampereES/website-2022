@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav>
       <div className="nav-links">
         {items.map(item => (
-          <div className="nav-link-div">
+          <div key={item.name} className="nav-link-div">
             <Link href={item.link} local>
               {item.name}
             </Link>

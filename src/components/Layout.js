@@ -8,10 +8,8 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import Footer from "@/components/Footer"
-import Header from "./header"
+import Header from "./Header"
 import Container from "./Container"
-
-import "../styles/global.css"
 
 const Layout = ({ children }) => {
   return (

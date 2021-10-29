@@ -1,7 +1,6 @@
 import React from "react"
 import Container from "./Container.jsx"
 import Link from "@/components/Link.jsx"
-import "../styles/footer.css"
 
 const Footer = () => {
   const structure = [

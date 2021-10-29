@@ -1,11 +1,12 @@
 import React from "react"
-import { Link as GLink } from "gatsby"
+import NextLink from "next/link"
 
 function Link(props) {
-  if (props.local) return <GLink to={props.href}>{props.children}</GLink>
+  if (props.local)
+    return <NextLink href={props.href}>{props.children}</NextLink>
   else
     return (
-      <a href={props.href} rel="noopener" target="_blank">
+      <a href={props.href} rel="noreferrer" target="_blank">
         {props.children}
       </a>
     )
