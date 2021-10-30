@@ -50,12 +50,16 @@ const Footer = () => {
       >
         {structure.map(group => {
           return (
-            <div className="footer-column">
+            <div className="footer-column" key={group.name}>
               <h3>{group.name}</h3>
               <div className="footer-link-styles">
                 {group.contents.map(link => {
                   return (
-                    <Link href={link.link} local={link.localLink}>
+                    <Link
+                      href={link.link}
+                      local={link.localLink}
+                      key={link.link}
+                    >
                       {link.name}
                     </Link>
                   )
