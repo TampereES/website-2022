@@ -8,8 +8,15 @@ import Image from "next/image"
 const Header = () => {
   return (
     <header>
-      <Container style={{ display: "flex", justifyContent:"center" }}>
-        <Image src={logo} objectFit="contain" height="60px" width="200px" alt="logo" />
+      <Container style={{ display: "flex", justifyContent: "center" }}>
+        <Image
+          src={logo}
+          objectFit="contain"
+          height="60px"
+          width="200px"
+          alt="logo"
+          priority
+        />
         <Navbar />
       </Container>
     </header>
