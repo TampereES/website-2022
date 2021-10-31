@@ -23,12 +23,11 @@ body {
 
 nav {
   width: 100%;
-  margin: 0 2em;
 }
 
 .nav-links {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   vertical-align: middle;
   text-align: center;
 }
@@ -70,9 +69,6 @@ a {
   color: #fffdf3;
   text-decoration: none;
 }
-footer a:hover {
-  color: #05dbf2;
-}
 
 .page-container {
   display: flex;
@@ -86,6 +82,10 @@ main {
 
 footer {
   background-color: #083d77;
+}
+
+footer a:hover {
+  color: #05dbf2;
 }
 
 .footer-column {

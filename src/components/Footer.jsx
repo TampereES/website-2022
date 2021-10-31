@@ -9,8 +9,8 @@ const Footer = () => {
       contents: [
         { name: "Home", link: "/", localLink: true },
         { name: "Projects", link: "/projects", localLink: true },
-        { name: "About us", link: "/about", localLink: true }
-        // { name: "News", link: "/news", localLink: true }
+        { name: "About us", link: "/about", localLink: true },
+        { name: "Events", link: "/events", localLink: true }
       ]
     },
     {
@@ -53,17 +53,11 @@ const Footer = () => {
             <div className="footer-column" key={group.name}>
               <h3>{group.name}</h3>
               <div className="footer-link-styles">
-                {group.contents.map(link => {
-                  return (
-                    <Link
-                      href={link.link}
-                      local={link.localLink}
-                      key={link.link}
-                    >
-                      {link.name}
-                    </Link>
-                  )
-                })}
+                {group.contents.map(link => (
+                  <Link href={link.link} local={link.localLink} key={link.link}>
+                    {link.name}
+                  </Link>
+                ))}
               </div>
             </div>
           )
