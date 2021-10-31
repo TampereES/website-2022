@@ -6,7 +6,7 @@ const Navbar = () => {
     { name: "Home", link: "/" },
     { name: "About", link: "/about" },
     { name: "Projects", link: "/projects" },
-    { name: "Events", link: "/events" },
+    { name: "Events", link: "/#events" },
     { name: "Contact", link: "/contact" }
   ]
 
