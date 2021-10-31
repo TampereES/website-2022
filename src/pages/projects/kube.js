@@ -1,10 +1,10 @@
 import React from "react"
-import Layout from "../../../components/Layout"
+import Layout from "../../components/Layout"
 
 function ProjectsPage() {
   return (
     <Layout>
-      Terve! Tää production roomin projektisivu
+      Terve! Tää on kuben projektisivu
     </Layout>
   )
 }
