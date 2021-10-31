@@ -52,9 +52,14 @@ header .container {
   align-items: center;
 }
 
+main h1 {
+  font-size: 3em;
+}
+
 p,
 article {
-  color: #0c3dff;
+  color: #083d77;
+  font-size: 2em;
 }
 
 h1,
@@ -63,8 +68,9 @@ h3,
 h4,
 h5,
 h6 {
-  color: rgb(247, 235, 235);
+  color: #083d77;
 }
+
 a {
   color: #fffdf3;
   text-decoration: none;
@@ -82,6 +88,10 @@ main {
 
 footer {
   background-color: #083d77;
+}
+
+footer h3 {
+  color: rgb(247, 235, 235);
 }
 
 footer a:hover {
