@@ -2,13 +2,16 @@ import React from 'react'
 
 
 const UserProfile = (props) => {
-    return <div>
+    return <div style={{ maxWidth: "500px" }}>
         <div>
-            <img class="profile-image" src={props.profileImgUrl}></img>
+            <img class="profile-image" alt="Profile picture" src={props.profileImgUrl} />
         </div>
 
-        <h2 class="name">{props.fullName}</h2>
-        <p class="desc">{props.desc}</p>
+        <h2 style={{ textAlign: "center" }} class="name">{props.fullName}</h2>
+        <p style={{ textAlign: "center" }} class="desc">{props.desc}</p>
     </div>
 
 }
+
+
+export default UserProfile;

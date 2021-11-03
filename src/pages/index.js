@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import UserProfile from '../components/user-profile'
 
 const IndexPage = () => (
   <Layout>
@@ -23,6 +24,12 @@ const IndexPage = () => (
       <Link to="/page-2/">Go to page 2</Link> <br />
       <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
     </p>
+
+    <UserProfile profileImgUrl="../images/profiles/juho.jpg" desc="tää on jussi" fullName="Juho Tapio" >
+
+
+    </UserProfile>
+
   </Layout>
 )
 
