@@ -8,7 +8,6 @@ Pinkki: #FC51BB
 
 @import url("https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap");
 
-/* Tää CSS lisätää Layouttii, joten se päätyy joka sivulle */
 body {
   margin: 0;
   padding: 0;
@@ -21,38 +20,34 @@ body {
   margin: 0 auto;
 }
 
-nav {
-  width: 100%;
-}
-
-.nav-links {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  vertical-align: middle;
-  text-align: center;
-}
-
-.nav-link-div {
-  margin: 1em;
-  font-size: 1.3em;
-}
-
-.nav-link-div:hover {
-  font-weight: bolder;
-}
-
-/* Värejä elementteihin */
-
 header {
   background-color: #083d77;
   position: relative;
-  z-index: -2;
 }
 
 header .container {
   align-items: center;
   position: relative;
-  z-index: -2;
+}
+
+nav {
+  width: 100%;
+}
+
+.nav-link-div {
+  margin: 1em;
+  font-size: 25px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.nav-links {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.nav-link-div:hover {
+  font-weight: bolder;
 }
 
 main h1 {
@@ -78,9 +73,8 @@ h6 {
 }
 
 #bg-blue {
-  padding: 5em;
+  padding: 5em 0;
   background-color: #083d77;
-  z-index: -2;
   position: relative;
 
   & h1 {

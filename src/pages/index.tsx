@@ -6,6 +6,7 @@ import kubeLogo from "../images/KUBElogo1.png"
 
 import styles from "../styles/homepage.module.scss"
 import Container from "@/components/Container"
+import Button from '@components/Button'
 
 const IndexPage = () => (
   <div>
@@ -20,6 +21,7 @@ const IndexPage = () => (
               TampereES is a student-run entrepreneurship community that
               encourages people inspired people to take action.
             </p>
+            <Button ></Button>
           </div>
           <Image
             className={styles.kubeLogo}
@@ -32,7 +34,7 @@ const IndexPage = () => (
       </div>
       <div id="bg-blue">
         <Container>
-          <div style={{ width: "75%", margin: "5em 0" }}>
+          <div style={{ width: "75%" }}>
             <h1>Take action.</h1>
             <p>
               TampereES organizes events and other networking opportunities for
@@ -40,7 +42,7 @@ const IndexPage = () => (
               get to know us.
             </p>
           </div>
-        </Container>{" "}
+        </Container>
       </div>
 
       <Container>
