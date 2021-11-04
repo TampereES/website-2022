@@ -9,42 +9,43 @@ import Container from "@/components/Container"
 
 const IndexPage = () => (
   <div>
-    <div className={styles.kubeLogoContainer}>
-      <Image
-        className={styles.kubeLogo}
-        src={kubeLogo}
-        alt="KUBE logo"
-        objectFit="contain"
-        layout="fill"
-        priority
-      />
-    </div>
     <Layout>
-      <Container>
-        <div style={{ width: "75%" }}>
-          <h1>Encouraging inspired people to take action.</h1>
-          <p>
-            TampereES is a student-run entrepreneurship community that
-            encourages people inspired people to take action.
-          </p>
-        </div>
-
-        <div style={{ width: "75%" }}>
-          <h1>Take action.</h1>
-          <p>
-            TampereES organizes events and other networking opportunities for
-            you to get involved. Come meet some other like-minded people and get
-            to know us.
-          </p>
-        </div>
-      </Container>
-
-      <div id="bg-blue">
-        <Container>
-          <h1 id="events">Upcoming events</h1>
-          <p>TODO: carousel of events</p>
+      <div>
+        <Container style={{ display: "flex" }}>
+          <div
+            style={{ width: "80%", margin: "5em 0", display: "inline-block" }}
+          >
+            <h1>Encouraging inspired people to take action.</h1>
+            <p>
+              TampereES is a student-run entrepreneurship community that
+              encourages people inspired people to take action.
+            </p>
+          </div>
+          <Image
+            className={styles.kubeLogo}
+            src={kubeLogo}
+            alt="KUBE logo"
+            objectFit="contain"
+            priority
+          />
         </Container>
       </div>
+      <div id="bg-blue">
+        <Container>
+          <div style={{ width: "75%", margin: "5em 0" }}>
+            <h1>Take action.</h1>
+            <p>
+              TampereES organizes events and other networking opportunities for
+              you to get involved. Come meet some other like-minded people and
+              get to know us.
+            </p>
+          </div>
+        </Container>{" "}
+      </div>
+
+      <Container>
+        <h1 id="events">Upcoming events</h1>
+      </Container>
     </Layout>
   </div>
 )
