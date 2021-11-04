@@ -4,7 +4,8 @@ import Image from "next/image"
 import Layout from "@/components/Layout"
 import kubeLogo from "../images/KUBElogo1.png"
 
-import styles from "../styles/homepage.module.css"
+import styles from "../styles/homepage.module.scss"
+import Container from "@/components/Container"
 
 const IndexPage = () => (
   <div>
@@ -19,25 +20,31 @@ const IndexPage = () => (
       />
     </div>
     <Layout>
-      <div style={{ width: "75%" }}>
-        <h1>Encouraging inspired people to take action.</h1>
-        <p>
-          TampereES is a student-run entrepreneurship community that encourages
-          people inspired people to take action.
-        </p>
-      </div>
+      <Container>
+        <div style={{ width: "75%" }}>
+          <h1>Encouraging inspired people to take action.</h1>
+          <p>
+            TampereES is a student-run entrepreneurship community that
+            encourages people inspired people to take action.
+          </p>
+        </div>
 
-      <div style={{ width: "75%" }}>
-        <h1>Take action.</h1>
-        <p>
-          TampereES organizes events and other networking opportunities for you
-          to get involved. Come meet some other like-minded people and get to
-          know us.
-        </p>
-      </div>
+        <div style={{ width: "75%" }}>
+          <h1>Take action.</h1>
+          <p>
+            TampereES organizes events and other networking opportunities for
+            you to get involved. Come meet some other like-minded people and get
+            to know us.
+          </p>
+        </div>
+      </Container>
 
-      <h1 id="events">Upcoming events</h1>
-      <p>TODO: carousel of events</p>
+      <div id="bg-blue">
+        <Container>
+          <h1 id="events">Upcoming events</h1>
+          <p>TODO: carousel of events</p>
+        </Container>
+      </div>
     </Layout>
   </div>
 )

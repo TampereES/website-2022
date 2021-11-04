@@ -35,9 +35,7 @@ const Layout = ({ children }) => {
 
       <div className="page-container">
         <Header />
-        <main>
-          <Container>{children}</Container>
-        </main>
+        <main>{children} </main>
         <Footer />
       </div>
     </>
