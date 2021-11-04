@@ -1,10 +1,22 @@
 import * as React from "react"
+import Image from "next/image"
 
 import Layout from "@/components/Layout"
+import kubeLogo from "../images/KUBElogo1.png"
+
+import styles from "../styles/homepage.module.css"
 
 const IndexPage = () => (
   <Layout>
     <div style={{ width: "75%" }}>
+      <Image
+        className={styles.kubeLogo}
+        src={kubeLogo}
+        
+        width="2000px"
+        height="2000px"
+        alt="KUBE logo"
+      />
       <h1>Encouraging inspired people to take action.</h1>
       <p>
         TampereES is a student-run entrepreneurship community that encourages
