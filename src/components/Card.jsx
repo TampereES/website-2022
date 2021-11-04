@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "next/image"
 
-const UserProfile = ({ imageUrl, name, description }) => {
+const Card = ({ imageUrl, name, description }) => {
   if (!imageUrl) return <p>img url empty</p>
   if (!name) return <p>card has no name</p>
 
@@ -37,4 +37,4 @@ const UserProfile = ({ imageUrl, name, description }) => {
   )
 }
 
-export default UserProfile
+export default Card
