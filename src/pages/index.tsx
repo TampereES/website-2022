@@ -37,7 +37,7 @@ const IndexPage = () => (
       </div>
 
       <h1 id="events">Upcoming events</h1>
-      <p style={{ color: "green" }}>TODO: carousel of events</p>
+      <p>TODO: carousel of events</p>
     </Layout>
   </div>
 )

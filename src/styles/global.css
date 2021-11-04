@@ -45,6 +45,7 @@ nav {
 
 header {
   background-color: #083d77;
+  z-index: -2;
 }
 
 header .container {
@@ -59,6 +60,8 @@ main h1 {
 p,
 article {
   color: #083d77;
+  font-family: "Zen Antique Soft", serif;
+  line-height: 1.4;
   font-size: 2em;
 }
 
@@ -69,6 +72,7 @@ h4,
 h5,
 h6 {
   color: #083d77;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 a {
@@ -88,6 +92,7 @@ main {
 
 footer {
   background-color: #083d77;
+  z-index: -2;
 }
 
 footer h3 {
