@@ -1,0 +1,14 @@
+.kubeLogo {
+  /* width: 100px; */
+  /* height: 100px; */
+}
+
+.kubeLogoContainer {
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+
+  right: -10em;
+
+  z-index: -1;
+}

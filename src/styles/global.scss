@@ -1,0 +1,129 @@
+/*
+Sininen: #083D77
+Vaalean sininen: #0C3DFF
+Turkoosi: #05DBF2
+Valkonen: #FFFDF3
+Pinkki: #FC51BB
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap");
+
+/* Tää CSS lisätää Layouttii, joten se päätyy joka sivulle */
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: white;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+nav {
+  width: 100%;
+}
+
+.nav-links {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  vertical-align: middle;
+  text-align: center;
+}
+
+.nav-link-div {
+  margin: 1em;
+  font-size: 1.3em;
+}
+
+.nav-link-div:hover {
+  font-weight: bolder;
+}
+
+/* Värejä elementteihin */
+
+header {
+  background-color: #083d77;
+  z-index: -2;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+}
+
+main h1 {
+  font-size: 3em;
+}
+
+p,
+article {
+  color: #083d77;
+  font-family: "Zen Antique Soft", serif;
+  line-height: 1.4;
+  font-size: 2em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #083d77;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+#bg-blue {
+  padding: 5em;
+  background-color: #083d77;
+  z-index: -2;
+  position: relative;
+
+  & h1 {
+    color: #fffdf3;
+  }
+
+  & p {
+    color: #fffdf3;
+  }
+}
+
+a {
+  color: #fffdf3;
+  text-decoration: none;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background-color: #083d77;
+  z-index: -2;
+}
+
+footer h3 {
+  color: rgb(247, 235, 235);
+}
+
+footer a:hover {
+  color: #05dbf2;
+}
+
+.footer-column {
+  width: 25%;
+  padding-bottom: 1.5em;
+}
+
+.footer-link-styles {
+  display: grid;
+  row-gap: 0.5em;
+}
