@@ -1,8 +1,22 @@
-import React from "react"
-import Layout from "../components/Layout"
+import Page from "../components/Page"
+import { getPage } from "../services/content"
 
-function ContactPage() {
-  return <Layout>This is the contact page template</Layout>
+const ContactPage = ({ content }) => {
+  return (
+    <Page title={content.meta__title} description={content.meta__description}>
+      <div className="section py-14 md:py-20">
+        <h1 className="h1">{content.title}</h1>
+      </div>
+    </Page>
+  )
+}
+
+export const getStaticProps = async () => {
+  const content = getPage("contact")
+
+  return {
+    props: { content }
+  }
 }
 
 export default ContactPage

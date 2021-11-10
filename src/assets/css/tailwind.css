@@ -1,0 +1,57 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  @apply bg-gray-50;
+}
+
+button {
+  @apply outline-none;
+}
+
+.about-bg-image {
+  background-image: url("../images/backgrounds/social.jpg");
+}
+
+@layer utilities {
+  .section {
+    @apply container mx-auto px-4;
+  }
+
+  .h1,
+  .h2,
+  .h3 {
+    @apply font-black;
+  }
+
+  .h1 {
+    @apply text-4xl md:text-6xl xl:text-7xl;
+  }
+
+  .h2 {
+    @apply text-3xl md:text-5xl xl:text-6xl;
+  }
+
+  .h3 {
+    @apply text-2xl md:text-4xl xl:text-5xl;
+  }
+
+  .lead {
+    @apply text-xl md:text-2xl xl:text-3xl;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-block text-xl px-5 py-4 duration-200 text-center font-bold rounded-lg;
+  }
+
+  .btn.btn-primary {
+    @apply bg-purple-600 text-white hover:bg-purple-700;
+  }
+
+  .btn.btn-secondary {
+    @apply bg-white text-gray-900 hover:bg-gray-100;
+  }
+}
