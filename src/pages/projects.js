@@ -33,8 +33,8 @@ const ProjectItem = ({ project }) => {
         }
       }
     >
-      <h2 className=" h2 mb-20 md:mb-28">{project.title}</h2>
-      <p className=" lead font-medium">{project.description}</p>
+      <h2 className="h2 mb-20 md:mb-28">{project.title}</h2>
+      <p className="lead font-medium">{project.description}</p>
     </div>
   )
 }
