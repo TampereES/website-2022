@@ -17,10 +17,18 @@ const HomePage = ({ content, news }) => {
 
         <div className="section">
           <div className="max-w-2xl text-center xl:text-left mx-auto xl:mx-0">
-            <h1 className="h1 mb-8">{content.header__title}</h1>
-            <p className="lead mb-10">{content.header__description}</p>
+            <h1 className="h1 mb-8" id="home-header-title">
+              {content.header__title}
+            </h1>
+            <p className="lead mb-10" id="home-header-description">
+              {content.header__description}
+            </p>
             <Link href="/projects">
-              <a href="/projects" className="btn btn-primary">
+              <a
+                href="/projects"
+                id="home-page-button"
+                className="btn btn-primary"
+              >
                 Learn about our projects
               </a>
             </Link>
