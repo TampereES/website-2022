@@ -31,11 +31,11 @@ const HomePage = ({ content, news }) => {
       <div className="bg-purple-800 pt-14 md:pt-20 pb-28 md:pb-36">
         <div className="section">
           <div className="max-w-2xl text-white">
-            <h2 className="h1 mb-8">{content.section1__title}</h2>
+            <h2 className="h1 mb-8">{content.events__title}</h2>
             <div
               className="lead mb-10"
               dangerouslySetInnerHTML={{
-                __html: content.section1__description
+                __html: content.events__description
               }}
             />
             <Link href="/news">
@@ -55,11 +55,6 @@ const HomePage = ({ content, news }) => {
                     <div className="py-20" />
                   </div>
                 })}
-                {/* <div className="bg-white rounded-lg shadow px-5 py-10">
-                  <h3 className="h3 mb-5">Coding sauna</h3>
-                  <p className="lead">Meet and grow with other developers</p>
-                  <div className="py-20" />
-                </div> */}
               </div>
             </div>
           </div>
