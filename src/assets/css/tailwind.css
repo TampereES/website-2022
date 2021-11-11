@@ -3,7 +3,7 @@
 @import "tailwindcss/utilities";
 
 body {
-  @apply bg-gray-50;
+  background-color: #fffdf3;
 }
 
 button {
@@ -54,4 +54,20 @@ button {
   .btn.btn-secondary {
     @apply bg-white text-gray-900 hover:bg-gray-100;
   }
+}
+
+#home-page-button {
+  color: #fffdf3;
+  background-color: #083d77;
+  float: left;
+}
+
+#home-header-title {
+  color: #083d77;
+  text-align: left;
+}
+
+#home-header-description {
+  color: #083d77;
+  text-align: left;
 }
