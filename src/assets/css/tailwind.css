@@ -81,3 +81,23 @@ button {
   color: #083d77;
   text-align: left;
 }
+
+#navbar {
+  background-color: #fffdf3;
+}
+
+#navbar-text {
+  color: #083d77;
+}
+
+#navbar-links {
+  color: #083d77;
+}
+
+#navbar-links:hover {
+  font-weight: bold;
+}
+
+#home-event-section {
+  background-color: #083d77;
+}

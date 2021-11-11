@@ -35,8 +35,10 @@ const HomePage = ({ content, news }) => {
           </div>
         </div>
       </div>
-
-      <div className="bg-purple-800 pt-14 pt-20 pb-28 pb-36">
+      <div
+        className="bg-purple-800 pt-14 pt-20 pb-28 pb-36"
+        id="home-event-section"
+      >
         <div className="section">
           <div className="max-w-2xl text-white">
             <h2 className="h1 mb-8">{content.events__title}</h2>
@@ -53,16 +55,20 @@ const HomePage = ({ content, news }) => {
             </Link>
           </div>
           <div className="section">
-
             <div className="relative">
               <div className="max-w-4xl">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-center mt-12 md:mt-16">
                   {news.news.map((entry, index) => {
-                    return <div key={index} className="bg-white rounded-lg shadow px-5 py-10">
-                      <h3 className="h3 mb-5">{entry.title}</h3>
-                      <p className="lead">{entry.description}</p>
-                      <div className="py-20" />
-                    </div>
+                    return (
+                      <div
+                        key={index}
+                        className="bg-white rounded-lg shadow px-5 py-10"
+                      >
+                        <h3 className="h3 mb-5">{entry.title}</h3>
+                        <p className="lead">{entry.description}</p>
+                        <div className="py-20" />
+                      </div>
+                    )
                   })}
                 </div>
               </div>

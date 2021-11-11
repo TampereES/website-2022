@@ -17,12 +17,12 @@ const links = [
   { title: "Home", href: "/", icon: HomeIcon },
   { title: "Projects", href: "/projects", icon: CollectionIcon },
   { title: "News", href: "/news", icon: NewspaperIcon },
-  { title: "About", href: "/about", icon: AnnotationIcon },
+  { title: "About", href: "/about", icon: AnnotationIcon }
 ]
 
 const Navbar = () => {
   return (
-    <Popover className="relative bg-white z-40">
+    <Popover className="relative bg-white z-40" id="navbar">
       <div className="section flex justify-between items-center py-5 lg:justify-start lg:space-x-10">
         <div>
           <Link href="/">
@@ -42,13 +42,19 @@ const Navbar = () => {
             <MenuIcon className="h-6 w-6" aria-hidden="true" />
           </Popover.Button>
         </div>
-        <div className="hidden lg:flex-1 lg:flex lg:items-center lg:justify-between">
+        <div
+          className="hidden lg:flex-1 lg:flex lg:items-center lg:justify-between"
+          id="navbar-text"
+        >
           <div className="flex">
             <p className="text-xl font-medium">
               Tampere Entrepreneurship Society
             </p>
           </div>
-          <nav className="flex items-center lg:ml-12 space-x-10">
+          <nav
+            className="flex items-center lg:ml-12 space-x-10"
+            id="navbar-links"
+          >
             {links.map((link) => (
               <NavLink href={link.href} key={link.href}>
                 {link.title}
