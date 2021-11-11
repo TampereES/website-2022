@@ -3,7 +3,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { getPage } from "../services/content"
 
-const HomePage = ({ content }) => {
+const HomePage = ({ content, news }) => {
   return (
     <Page title={content.meta__title} description={content.meta__description}>
       <div className="pt-24 pb-32 xl:pt-40 xl:pb-72 relative">
@@ -55,43 +55,19 @@ const HomePage = ({ content }) => {
 
           <div className="relative">
             <div className="max-w-4xl">
-              <div
-                className="
-                                grid grid-cols-1
-                                md:grid-cols-2
-                                gap-10
-                                text-center
-                                mt-12
-                                md:mt-16
-                            "
-              >
-                <div className="bg-white rounded-lg shadow px-5 py-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-center mt-12 md:mt-16">
+                {news.news.map((entry, index) => {
+                  return <div key={index} className="bg-white rounded-lg shadow px-5 py-10">
+                    <h3 className="h3 mb-5">{entry.title}</h3>
+                    <p className="lead">{entry.description}</p>
+                    <div className="py-20" />
+                  </div>
+                })}
+                {/* <div className="bg-white rounded-lg shadow px-5 py-10">
                   <h3 className="h3 mb-5">Coding sauna</h3>
                   <p className="lead">Meet and grow with other developers</p>
                   <div className="py-20" />
-                </div>
-                <div className="bg-white rounded-lg shadow px-5 py-10">
-                  <h3 className="h3 mb-5">Coding sauna</h3>
-                  <p className="lead">Meet and grow with other developers</p>
-                  <div className="py-20" />
-                </div>
-              </div>
-            </div>
-
-            <div className="hidden xl:flex items-center absolute top-0 right-0 mt-24 space-x-10 pointer-events-none">
-              <div>
-                <Image
-                  src={require("../assets/images/shapes/ellipse.svg")}
-                  alt="Ellipse shape"
-                  width={100}
-                />
-              </div>
-              <div>
-                <Image
-                  src={require("../assets/images/shapes/ellipse.svg")}
-                  alt="Ellipse shape"
-                  width={65}
-                />
+                </div> */}
               </div>
             </div>
           </div>
@@ -103,9 +79,10 @@ const HomePage = ({ content }) => {
 
 export const getStaticProps = async () => {
   const content = getPage("index")
+  const news = getPage("news")
 
   return {
-    props: { content }
+    props: { content, news }
   }
 }
 
