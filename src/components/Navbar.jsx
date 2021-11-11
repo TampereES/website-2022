@@ -18,7 +18,6 @@ const links = [
   { title: "Projects", href: "/projects", icon: CollectionIcon },
   { title: "News", href: "/news", icon: NewspaperIcon },
   { title: "About", href: "/about", icon: AnnotationIcon },
-  { title: "Contact", href: "/contact", icon: MailIcon }
 ]
 
 const Navbar = () => {
