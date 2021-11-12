@@ -1,0 +1,10 @@
+---
+label: News template
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: description
+  label: description
