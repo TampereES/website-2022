@@ -8,3 +8,9 @@ fields:
 - type: textarea
   name: description
   label: description
+- name: images
+  type: file
+  config:
+    maxSize: 64
+  label: Images
+  description: Images for the post.
