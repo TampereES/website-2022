@@ -5,9 +5,9 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: pages
-  label: sivut
-  create: all
+  path: src/content/posts
+  label: News
+  create: documents
   match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
