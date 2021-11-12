@@ -1,5 +1,6 @@
 import Page from "../../components/Page"
 import { getPost, getPostsSlugs, markdownToHtml } from "../../services/content"
+import Image from "next/image"
 
 const NewsPostPage = ({ post }) => {
   if (!post) {
@@ -18,7 +19,9 @@ const NewsPostPage = ({ post }) => {
 
         {content.picture && (
           <div className="mb-8 lg:mb-12">
-            <img
+            <Image
+              height={"100%"}
+              width={"100%"}
               src={content.picture}
               alt={content.title}
               className="w-full rounded-lg"
