@@ -5,11 +5,11 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: pages
-  label: sivut
-  create: all
+  path: src/content/posts
+  label: News
+  create: documents
   match: "**/*"
-upload_dir: uploads
+upload_dir: src/public/media
 public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
