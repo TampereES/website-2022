@@ -6,4 +6,4 @@ description: Coder sauna is for meeting up with excited coders, getting to know 
 ---
 ## Coder sauna
 
-This is the content for the coder sauna news page. TODO![coding sauna](/uploads/codersauna.jpg "Coding sauna")
+This is the content for the coder sauna news page. TODO!
