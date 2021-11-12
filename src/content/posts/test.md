@@ -1,7 +1,7 @@
 ---
 title: test
 description: test page desc
-images: "/uploads/codersauna.jpg"
+images: "/static/media/codersauna.jpg"
 
 ---
 Hello! This is the test page
