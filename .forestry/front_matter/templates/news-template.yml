@@ -14,3 +14,5 @@ fields:
     maxSize: 64
   label: Images
   description: Add only one image per post. Image placement not yet supported.
+pages:
+- src/content/posts/test.md
