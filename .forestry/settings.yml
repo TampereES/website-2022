@@ -9,7 +9,7 @@ sections:
   label: News
   create: documents
   match: "**/*"
-upload_dir: src/public/media
+upload_dir: public/media
 public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
