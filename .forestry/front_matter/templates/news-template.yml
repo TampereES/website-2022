@@ -19,7 +19,7 @@ fields:
   description: Date and time of the event.
   config:
     required: false
-    date_format: DD-MM-YYYY
+    date_format: DD.MM.YYYY
     time_format: 
     display_utc: false
   label: date
