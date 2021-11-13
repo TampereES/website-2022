@@ -24,7 +24,7 @@ const PostItem = ({ post }) => {
 
   const classes = classNames(
     "bg-gray-100 shadow rounded-lg p-6 sm:p-8 lg:p-12",
-    post.picture && "text-white"
+    post.image && "text-white"
   )
 
   return (
@@ -33,8 +33,9 @@ const PostItem = ({ post }) => {
         href={href}
         className={classes}
         style={
-          post.picture && {
-            backgroundImage: `url(${post.picture})`
+          post.image && {
+            backgroundImage: `url(${post.image})`,
+            objectFit: "initial"
           }
         }
       >
