@@ -19,10 +19,10 @@ fields:
   description: Date and time of the event.
   config:
     required: false
-    date_format: 
+    date_format: DD-MM-YYYY
     time_format: 
     display_utc: false
-  label: Date
+  label: date
 pages:
 - src/content/posts/test-title.md
 - src/content/posts/test.md
