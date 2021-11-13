@@ -14,5 +14,14 @@ fields:
     maxSize: 64
   label: Images
   description: Add only one image per post. Image placement not yet supported.
+- name: date
+  type: datetime
+  description: Date and time of the event.
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  label: Date
 pages:
 - src/content/posts/test.md
