@@ -24,4 +24,5 @@ fields:
     display_utc: false
   label: Date
 pages:
+- src/content/posts/test-title.md
 - src/content/posts/test.md
