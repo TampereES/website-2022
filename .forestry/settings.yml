@@ -7,7 +7,7 @@ sections:
 - type: directory
   path: src/content/pages
   label: About
-  create: all
+  create: documents
   match: "**/*"
 - type: directory
   path: src/content/posts
