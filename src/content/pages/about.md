@@ -22,10 +22,10 @@ members:
     description: "Eu anim laboris ea ipsum ut aliqua consectetur."
   - name: Krister alasaarela
     picture: "/media/profile_placeholder.webp"
-    description: "Eu anim laboris ea ipsum ut aliqua consectetur."
+    description: "Occaecat ex fugiat pariatur in dolore nostrud enim nisi laborum sunt."
   - name: Krister alasaarela
     picture: "/media/profile_placeholder.webp"
-    description: "Eu anim laboris ea ipsum ut aliqua consectetur."
+    description: "Ullamco laborum duis mollit sunt commodo proident fugiat in tempor."
 
 meta__title: About
 meta__description:

@@ -1,22 +1,22 @@
 ---
 title: Projects.
 projects:
-  - template: title-and-description
+  - template: Project
     title: Hercle, devirginato fortis
     description:
       Stream Startup Festival brings the most promising startups, investors
       and corporate innovators together.
-  - template: title-and-description
+  - template: Project
     description:
       Stream Startup Festival brings the most promising startups, investors
       and corporate innovators together.
     title: Hercle, devirginato fortis
-  - template: title-and-description
+  - template: Project
     title: Hercle, devirginato fortis
     description:
       Stream Startup Festival brings the most promising startups, investors
       and corporate innovators together.
-  - template: title-and-description
+  - template: Project
     title: Hercle, devirginato fortis
     description:
       Stream Startup Festival brings the most promising startups, investors
