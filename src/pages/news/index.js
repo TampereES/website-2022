@@ -50,6 +50,9 @@ export const getStaticProps = async () => {
   const content = getPage("news")
   const posts = getPosts()
 
+  posts.forEach((post) => {
+  })
+
   return {
     props: { content, posts }
   }
