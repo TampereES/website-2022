@@ -8,21 +8,19 @@ fields:
 - type: textarea
   name: description
   label: description
-- name: images
+- name: image
   type: file
   config:
     maxSize: 64
-  label: Images
-  description: Add only one image per post. Image placement not yet supported.
-- name: date
-  type: datetime
-  description: Date and time of the event.
+  label: Image
+  description: This is the image in the front page as the background of the event.
+- name: instagram_link
+  type: text
   config:
     required: false
-    date_format: DD.MM.YYYY
-    time_format: 
-    display_utc: false
-  label: date
+  label: Instagram link
+  description: This is the instagram link to the post. You can use other links too
+    for more information about the post.
 pages:
 - src/content/posts/test-title.md
 - src/content/posts/test.md
