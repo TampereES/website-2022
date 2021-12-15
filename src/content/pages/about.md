@@ -7,7 +7,7 @@ header__description: "Tre.es is a student-run entrepreneurship society that enco
   create a network that lasts a lifetime."
 team__title: Board 2022 - these are the people behind our daily operations
 members:
-- name: Krister Alasaarela, Chairman
+- name: Krister Alasaarela
   picture: "/media/profile_placeholder.webp"
   description: Sint fugiat deserunt nulla eiusmod aute ex.
 - name: Krister Alasaarela
