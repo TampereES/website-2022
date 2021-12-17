@@ -49,29 +49,30 @@ const HomePage = ({ content, news }) => {
               }}
             />
             <Link href="/news">
-              <a href="/news" className="btn btn-secondary">
-                Read our news
+              <a href="https://www.instagram.com/tamperees/"
+                target="_blank"
+                rel="noreferrer" className="btn btn-secondary">
+                Learn more
               </a>
             </Link>
           </div>
-          <div className="section">
-            <div className="relative">
-              <div className="max-w-4xl">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-center mt-12 md:mt-16">
-                  {news.news.map((entry, index) => {
-                    return (
-                      <div
-                        key={index}
-                        className="bg-white rounded-lg shadow px-5 py-10"
-                      >
-                        <h3 className="h3 mb-5">{entry.title}</h3>
-                        <p className="lead">{entry.description}</p>
-                        <div className="py-20" />
-                      </div>
-                    )
-                  })}
-                </div>
-              </div>
+          <div className="relative">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 text-center mt-12 md:mt-16">
+              {news.news.map((entry, index) => {
+                return (
+                  <div
+                    key={index}
+                    className="bg-white rounded-lg shadow px-5 py-10"
+                    style={{
+                      backgroundImage: "/media/profile_placeholder.webp"
+                    }}
+                  >
+                    <h3 className="h3 mb-5">{entry.title}</h3>
+                    <p className="lead">{entry.description}</p>
+                    <div className="py-20" />
+                  </div>
+                )
+              })}
             </div>
           </div>
         </div>
