@@ -30,8 +30,11 @@ const AboutPage = ({ content }) => {
                 alt={member.name}
                 className="h-80 w-full object-cover rounded-t-lg"
               />
-              <div className="py-5">
+              <div className="py-3">
                 <h3 className="lead font-bold">{member.name}</h3>
+              </div>
+              <div className="py-2">
+                <h3 className="text-3xl">{member.title}</h3>
               </div>
               <div className="py-5">
                 <h3 className="text-2xl">{member.description}</h3>
