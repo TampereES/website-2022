@@ -24,6 +24,12 @@ fields:
   - type: text
     name: description
     label: description
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+    description: Titteli
 - type: text
   name: meta__title
   label: meta__title
