@@ -17,10 +17,11 @@ members:
   description: M.Sc. student in Business Administration from Tampere University.   Former
     professional dancer and experienced from educational affairs, finance & sales.  Member
     of Slush fall team 2021
-- name: Krister alasaarela
+- name: Coral Nguyen
   picture: "/media/profile_placeholder.webp"
-  title: Template
-  description: Exercitation do sit sint adipisicing fugiat dolore magna fugiat fugiat.
+  title: Art
+  description: B.A. student in Interactive Media from Tampere University.   Designed
+    digital artworks and products for events for over 4 years.
 - name: Eemil Hinkka
   picture: "/media/pc270959.jpg"
   title: Partnerships
