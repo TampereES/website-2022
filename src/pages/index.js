@@ -3,7 +3,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { getPage } from "../services/content"
 
-const HomePage = ({ content, news }) => {
+const HomePage = ({ content, projects }) => {
   return (
     <Page title={content.meta__title} description={content.meta__description}>
       <div className="pt-24 pb-32 xl:pt-40 xl:pb-72 relative">
@@ -48,17 +48,17 @@ const HomePage = ({ content, news }) => {
                 __html: content.events__description
               }}
             />
-            <Link href="/news">
+            {/* <Link href="/projects"> */}
               <a href="https://www.instagram.com/tamperees/"
                 target="_blank"
                 rel="noreferrer" className="btn btn-secondary">
                 Learn more
               </a>
-            </Link>
+            {/* </Link> */}
           </div>
           <div className="relative">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 text-center mt-12 md:mt-16">
-              {news.news.map((entry, index) => {
+              {projects.projects.map((entry, index) => {
                 return (
                   <div
                     key={index}
@@ -83,10 +83,10 @@ const HomePage = ({ content, news }) => {
 
 export const getStaticProps = async () => {
   const content = getPage("index")
-  const news = getPage("news")
+  const projects = getPage("projects")
 
   return {
-    props: { content, news }
+    props: { content, projects }
   }
 }
 

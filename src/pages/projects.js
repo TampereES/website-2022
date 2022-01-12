@@ -20,19 +20,24 @@ const ProjectsPage = ({ content }) => {
 
 const ProjectItem = ({ project }) => {
   const classes = classNames(
-    "bg-gray-100 shadow rounded-lg p-6 sm:p-8 lg:p-12",
+    "bg-gray-100 shadow rounded-lg p-6  relative",
+    //  sm:p-8 lg:p-12
     project.picture && "text-white"
   )
 
   return (
     <div
+      style={{ zIndex: -1 }}
       className={classes}
-      style={
-        project.picture && {
-          backgroundImage: `url(${project.picture})`
-        }
-      }
+    // style={
+    //   project.image && {
+    //     backgroundImage: `url(${project.image})`,
+    //     objectFit: "none"
+    //   }
+    // }
     >
+      {/* <img src={project.image}
+        style={{ objectFit: "contain", overflow: "hidden", position: "absolute", zIndex: -1 }} alt="project image"></img> */}
       <h2 className="h2 mb-20 md:mb-28">{project.title}</h2>
       <p className="lead font-medium">{project.description}</p>
     </div>
