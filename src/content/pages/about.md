@@ -19,17 +19,12 @@ members:
   picture: "/media/profile_placeholder.webp"
   title: "Template"
   description: Exercitation do sit sint adipisicing fugiat dolore magna fugiat fugiat.
-- name: Krister alasaarela
-  picture: "/media/profile_placeholder.webp"
-  title: "Template"
-  description: Eu anim laboris ea ipsum ut aliqua consectetur.
 - name: Eemil Hinkka
-  picture: ''
-  title: "Template"
-  description: B.Sc. student in computer science from Tampere University. Former Aaltoes
-    Team member and business development consultant.   Organized an event in 2019
-    with over 400 applications from startups and venture capital firms from around
-    the world.
+  picture: "/static/media/pc270959.jpg"
+  title: "Partnerships"
+  description: 1st year entrepreneurial-minded business student from TAMK.  Prior
+    experience with organizing events and sales. Interested in partnerships and project
+    management.
 meta__title: About
 meta__description: Tre.es is a student-run entrepreneurship society that encourages
   inspired people to take action. We want to cultivate a fearless environment where
