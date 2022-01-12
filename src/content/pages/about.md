@@ -11,10 +11,12 @@ members:
   picture: "/media/profile_placeholder.webp"
   title: Mega coder wizard dev
   description: Sint fugiat deserunt nulla eiusmod aute ex.
-- name: Krister Alasaarela
+- name: Jenni Toivonen
   picture: "/media/profile_placeholder.webp"
-  title: Template
-  description: Minim id aliqua ut elit aliqua ex ullamco voluptate anim anim labore.
+  title: Finance
+  description: M.Sc. student in Business Administration from Tampere University.   Former
+    professional dancer and experienced from educational affairs, finance & sales.  Member
+    of Slush fall team 2021
 - name: Krister alasaarela
   picture: "/media/profile_placeholder.webp"
   title: Template
