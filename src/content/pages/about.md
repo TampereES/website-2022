@@ -9,21 +9,23 @@ team__title: Board 2022 - these are the people behind our daily operations
 members:
 - name: Krister Alasaarela
   picture: "/media/profile_placeholder.webp"
+  title: "Template"
   description: Sint fugiat deserunt nulla eiusmod aute ex.
 - name: Krister Alasaarela
   picture: "/media/profile_placeholder.webp"
+  title: "Template"
   description: Minim id aliqua ut elit aliqua ex ullamco voluptate anim anim labore.
 - name: Krister alasaarela
   picture: "/media/profile_placeholder.webp"
+  title: "Template"
   description: Exercitation do sit sint adipisicing fugiat dolore magna fugiat fugiat.
 - name: Krister alasaarela
   picture: "/media/profile_placeholder.webp"
-  description: Eu anim laboris ea ipsum ut aliqua consectetur.
-- name: Krister alasaarela
-  picture: "/media/profile_placeholder.webp"
+  title: "Template"
   description: Eu anim laboris ea ipsum ut aliqua consectetur.
 - name: Eemil Hinkka
   picture: ''
+  title: "Template"
   description: B.Sc. student in computer science from Tampere University. Former Aaltoes
     Team member and business development consultant.   Organized an event in 2019
     with over 400 applications from startups and venture capital firms from around
