@@ -20,7 +20,7 @@ members:
   title: Template
   description: Exercitation do sit sint adipisicing fugiat dolore magna fugiat fugiat.
 - name: Eemil Hinkka
-  picture: "/public/media/pc270959.jpg"
+  picture: "/media/pc270959.jpg"
   title: Partnerships
   description: 1st year entrepreneurial-minded business student from TAMK.  Prior
     experience with organizing events and sales. Interested in partnerships and project
