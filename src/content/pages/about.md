@@ -22,7 +22,7 @@ members:
 - name: Krister alasaarela
   picture: "/media/profile_placeholder.webp"
   description: Eu anim laboris ea ipsum ut aliqua consectetur.
-- name: Eemil Hinkka - Partnerships
+- name: Eemil Hinkka Partnerships
   picture: ''
   description: 1st year entrepreneurial-minded business student from TAMK.  Prior
     experience with organizing events and sales. Interested in partnerships and project
