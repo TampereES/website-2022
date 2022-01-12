@@ -15,7 +15,7 @@ members:
     with over 400 applications from startups and venture capital firms from around
     the world.
 - name: Jenni Toivonen
-  picture: "/media/profile_placeholder.webp"
+  picture: "/media/pc270981.jpg"
   title: Finance
   description: M.Sc. student in Business Administration from Tampere University.   Former
     professional dancer and experienced from educational affairs, finance & sales.  Member
