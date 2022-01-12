@@ -9,7 +9,7 @@ team__title: Board 2022 - these are the people behind our daily operations
 members:
 - name: Krister Alasaarela
   picture: "/media/profile_placeholder.webp"
-  title: Template
+  title: Mega coder wizard dev
   description: Sint fugiat deserunt nulla eiusmod aute ex.
 - name: Krister Alasaarela
   picture: "/media/profile_placeholder.webp"
