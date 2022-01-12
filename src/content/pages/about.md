@@ -21,7 +21,7 @@ members:
     professional dancer and experienced from educational affairs, finance & sales.  Member
     of Slush fall team 2021
 - name: Coral Nguyen
-  picture: "/media/profile_placeholder.webp"
+  picture: "/media/pc270968.jpg"
   title: Art
   description: B.A. student in Interactive Media from Tampere University.   Designed
     digital artworks and products for events for over 4 years.
