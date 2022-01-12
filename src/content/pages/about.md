@@ -9,8 +9,11 @@ team__title: Board 2022 - these are the people behind our daily operations
 members:
 - name: Krister Alasaarela
   picture: "/media/profile_placeholder.webp"
-  title: Mega coder wizard dev
-  description: Sint fugiat deserunt nulla eiusmod aute ex.
+  title: Chairman
+  description: B.Sc. student in computer science from Tampere University. Former Aaltoes
+    Team member and business development consultant.   Organized an event in 2019
+    with over 400 applications from startups and venture capital firms from around
+    the world.
 - name: Jenni Toivonen
   picture: "/media/profile_placeholder.webp"
   title: Finance
