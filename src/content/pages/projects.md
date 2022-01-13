@@ -1,5 +1,5 @@
 ---
-title: KUBE
+title: Projects
 projects:
 - template: Stream
   title: Hercle, devirginato fortis
