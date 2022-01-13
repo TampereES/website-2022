@@ -1,6 +1,10 @@
 ---
 title: Projects
 projects:
+- template: Projects
+  title: Coder sauna
+  description: Coder sauna is for meeting up with excited coders, getting to know
+    new technologies and chatting in the sauna
 - template: Stream
   title: KUBE
   description: "KUBE is a community built by Tampere Entrepreneurship Society for
