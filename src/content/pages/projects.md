@@ -5,7 +5,7 @@ projects:
   title: Coder sauna
   description: Coder sauna is for meeting up with excited coders, getting to know
     new technologies and chatting in the sauna
-- template: Stream
+- template: KUBE
   title: KUBE
   description: "KUBE is a community built by Tampere Entrepreneurship Society for
     the ambitious tech-students of the Tampere Universities. \n\nWe offer challenges,
