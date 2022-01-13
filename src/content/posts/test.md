@@ -1,5 +1,5 @@
 ---
-title: Content room
+title: test
 description: test page desc
 image: "/media/codersauna.jpg"
 instagram_link: ''
