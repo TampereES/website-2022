@@ -1,6 +1,11 @@
 ---
 title: Projects
 projects:
+- template: Content room
+  title: Content room
+  description: The place for all the content creators of Tampere universities. Podcasts,
+    online events, photoshoots, you name it. By booking a time you can access all
+    the tools content creator needs. Located in Platform 6 next to main campus.
 - template: coder sauna
   title: Coder sauna
   description: Coder sauna is for meeting up with excited coders, getting to know
