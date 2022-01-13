@@ -6,7 +6,7 @@ projects:
   description: Stream Startup Festival brings the most promising startups, investors
     and corporate innovators together.
 - template: Project
-  title: Hercle, devirginato fortis
+  title: STREAM
   description: Stream Startup Festival brings the most promising startups, investors
     and corporate innovators together.
 meta__title: Projects
