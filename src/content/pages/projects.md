@@ -1,6 +1,14 @@
 ---
 title: Projects
 projects:
+- template: Summer of startups
+  title: Summer of startups
+  description: "Summer of Startups is an internship program organized for students
+    to get hands-on experience working for startups. \nThere will be weekly workshops
+    organized to help with the onboarding. To make the most out of the workshops,
+    we are figuring out the demand of startups. Whether they need help with developing
+    their product, growing their business or general operations. Students hired would
+    match the demand and program."
 - template: Content room
   title: Content room
   description: The place for all the content creators of Tampere universities. Podcasts,
