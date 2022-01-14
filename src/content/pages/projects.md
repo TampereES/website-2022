@@ -6,10 +6,12 @@ projects:
   description: The place for all the content creators of Tampere universities. Podcasts,
     online events, photoshoots, you name it. By booking a time you can access all
     the tools content creator needs. Located in Platform 6 next to main campus.
-- template: coder sauna
-  title: Coder sauna
-  description: Coder sauna is for meeting up with excited coders, getting to know
-    new technologies and chatting in the sauna
+- template: Coding sauna
+  title: Coding sauna
+  description: 'Coding sauna  is a weekly gathering of people interested in coding,
+    The aim of these gatherings is getting to know new technologies, discussing and
+    introducing interesting tech-topics, and networking with other people. The gathering
+    consists on  short prresentations/discussions (app. 20-30 mins) and sauna. '
 - template: KUBE
   title: KUBE
   description: "KUBE is a community built by Tampere Entrepreneurship Society for
