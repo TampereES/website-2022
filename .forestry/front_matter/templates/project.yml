@@ -11,3 +11,9 @@ fields:
 - type: file
   name: image
   label: image
+- name: link
+  type: text
+  config:
+    required: false
+  label: link
+  description: Instagram link or something. Opens in a new tab when project is clicked.
