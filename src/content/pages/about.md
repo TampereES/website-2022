@@ -19,7 +19,7 @@ members:
   title: Finance
   description: M.Sc. student in Business Administration from Tampere University.   Former
     professional dancer and experienced from educational affairs, finance & sales.  Member
-    of Slush fall team 2021
+    of Slush fall team 2021.
 - name: Coral Nguyen
   picture: "/media/pc270968.jpg"
   title: Art

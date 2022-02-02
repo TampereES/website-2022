@@ -1,5 +1,6 @@
 import Page from "../components/Page"
 import { getPage } from "../services/content"
+import Image from "next/image"
 
 const AboutPage = ({ content }) => {
   return (
@@ -22,13 +23,16 @@ const AboutPage = ({ content }) => {
       <div className="section py-14 md:py-20">
         <h2 className="h2 mb-12 md:mb-16">{content.team__title}</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 text-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 text-center">
           {content.members.map((member, index) => (
             <div key={index} className="bg-gray-100 shadow rounded-lg">
-              <img
+              <Image
                 src={member.picture}
                 alt={member.name}
-                className="h-80 w-full object-cover rounded-t-lg"
+                width="600"
+                height="700"
+                layout="responsive"
+                className="rounded-t-lg object-cover"
               />
               <div className="py-3">
                 <h3 className="lead font-bold">{member.name}</h3>
@@ -36,8 +40,8 @@ const AboutPage = ({ content }) => {
               <div className="py-2">
                 <h3 className="text-3xl">{member.title}</h3>
               </div>
-              <div className="py-5">
-                <h3 className="text-2xl">{member.description}</h3>
+              <div className="pt-1 pb-5">
+                <h3 className="text-2xl lg:p-5">{member.description}</h3>
               </div>
             </div>
           ))}
