@@ -25,7 +25,10 @@ const links = [
 
 const Navbar = () => {
   return (
-    <Popover className="relative bg-white z-40" id="navbar">
+    <Popover
+      className="relative bg-white z-40"
+      style={{ backgroundColor: "#fffdf3" }}
+    >
       <div className="section flex justify-between items-center py-5 lg:justify-start lg:space-x-10">
         <div>
           <Link href="/">
@@ -47,7 +50,7 @@ const Navbar = () => {
         </div>
         <div
           className="hidden lg:flex-1 lg:flex lg:items-center lg:justify-between"
-          id="navbar-text"
+          style={{ color: "#083d77" }}
         >
           <div className="flex">
             <p className="text-xl font-medium">
@@ -56,7 +59,7 @@ const Navbar = () => {
           </div>
           <nav
             className="flex items-center lg:ml-12 space-x-10"
-            id="navbar-links"
+            style={{ color: "#083d77" }}
           >
             {links.map((link) => (
               <NavLink href={link.href} key={link.href}>

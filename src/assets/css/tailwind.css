@@ -65,39 +65,3 @@ button {
     @apply bg-white text-gray-900 hover:bg-gray-100;
   }
 }
-
-#home-page-button {
-  color: #fffdf3;
-  background-color: #083d77;
-  float: left;
-}
-
-#home-header-title {
-  color: #083d77;
-  text-align: left;
-}
-
-#home-header-description {
-  color: #083d77;
-  text-align: left;
-}
-
-#navbar {
-  background-color: #fffdf3;
-}
-
-#navbar-text {
-  color: #083d77;
-}
-
-#navbar-links {
-  color: #083d77;
-}
-
-#navbar-links:hover {
-  font-weight: bold;
-}
-
-#home-event-section {
-  background-color: #083d77;
-}

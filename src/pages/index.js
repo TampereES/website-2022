@@ -18,25 +18,24 @@ const HomePage = ({ content, projects }) => {
 
         <div className="section">
           <div className="max-w-2xl text-center xl:mx-0">
-            <h1 className="h1 mb-8" id="home-header-title">
+            <h1 className="h1 mb-8 text-left" style={{ color: "#083d77" }}>
               {content.header__title}
             </h1>
-            <p className="lead mb-10" id="home-header-description">
+            <p className="lead mb-10 text-left" style={{ color: "#083d77" }}>
               {content.header__description}
             </p>
             <Link href="/projects">
-              <a
-                href="/projects"
-                id="home-page-button"
-                className="btn btn-primary"
+              <button
+                style={{ color: " #fffdf3", backgroundColor: "#083d77" }}
+                className="btn btn-primary float-left"
               >
                 Learn about our projects
-              </a>
+              </button>
             </Link>
           </div>
         </div>
       </div>
-      <div className="pt-20 pb-36" id="home-event-section">
+      <div className="pt-20 pb-36" style={{ backgroundColor: "#083d77" }}>
         <div className="section">
           <div className="max-w-2xl text-white">
             <h2 className="h1 mb-8">{content.events__title}</h2>
