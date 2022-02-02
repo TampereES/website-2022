@@ -16,7 +16,11 @@ import classNames from "clsx"
 const links = [
   { title: "Home", href: "/", icon: HomeIcon },
   { title: "Projects", href: "/projects", icon: CollectionIcon },
-  { title: "News", href: "/news", icon: NewspaperIcon },
+  {
+    title: "News",
+    href: "https://www.instagram.com/tamperees/",
+    icon: NewspaperIcon
+  },
   { title: "About", href: "/about", icon: AnnotationIcon }
 ]
 

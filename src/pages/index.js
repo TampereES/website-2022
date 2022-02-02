@@ -16,7 +16,7 @@ const HomePage = ({ content, news }) => {
         </div>
 
         <div className="section">
-          <div className="max-w-2xl text-center text-left xl:mx-0">
+          <div className="max-w-2xl text-center xl:mx-0">
             <h1 className="h1 mb-8" id="home-header-title">
               {content.header__title}
             </h1>
