@@ -22,5 +22,4 @@ fields:
   description: This is the instagram link to the post. You can use other links too
     for more information about the post.
 pages:
-- src/content/posts/test-title.md
 - src/content/posts/test.md
