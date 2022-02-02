@@ -35,5 +35,5 @@ meta__title: About
 meta__description: Tre.es is a student-run entrepreneurship society that encourages
   inspired people to take action. We want to cultivate a fearless environment where
   people aren’t afraid to chase their dreams.
-
+aboutPageImage: "/media/beerchat.jpg"
 ---
