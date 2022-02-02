@@ -6,7 +6,6 @@ import {
   AnnotationIcon,
   CollectionIcon,
   HomeIcon,
-  MailIcon,
   MenuIcon,
   NewspaperIcon,
   XIcon
