@@ -14,7 +14,6 @@ const AboutPage = ({ content }) => {
             layout="fill"
             objectFit="cover"
             alt=""
-            className=""
           />
         </div>
         <div

@@ -4,7 +4,7 @@ function Project(props) {
   return (
     <a
       href={props.link}
-      rel="noopener"
+      rel="noreferrer"
       target="_blank"
       className="bg-white rounded-lg shadow px-15 p-10"
     >

@@ -31,15 +31,14 @@ const Navbar = () => {
     >
       <div className="section flex justify-between items-center py-5 lg:justify-start lg:space-x-10">
         <div>
-          <Link href="/">
-            <a href="/" className="flex">
-              <span className="sr-only">TampereES</span>
+          <Link href="/" passHref>
+            <button>
               <Image
                 className="h-8 w-auto sm:h-12"
                 src={require("../assets/images/logo.png")}
                 alt="TampereES logo"
               />
-            </a>
+            </button>
           </Link>
         </div>
         <div className="-mr-2 -my-2 lg:hidden">

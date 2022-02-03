@@ -24,7 +24,7 @@ const HomePage = ({ content, projects }) => {
             <p className="lead mb-10 text-left" style={{ color: "#083d77" }}>
               {content.header__description}
             </p>
-            <Link href="/projects">
+            <Link href="/projects" passHref>
               <button
                 style={{ color: " #fffdf3", backgroundColor: "#083d77" }}
                 className="btn btn-primary float-left"
@@ -39,12 +39,8 @@ const HomePage = ({ content, projects }) => {
         <div className="section">
           <div className="max-w-2xl text-white">
             <h2 className="h1 mb-8">{content.events__title}</h2>
-            <div
-              className="lead mb-10"
-              dangerouslySetInnerHTML={{
-                __html: content.events__description
-              }}
-            />
+            <p className="lead mb-10">{content.events__description}</p>
+
             {/* <Link href="/projects"> */}
             <a
               href="https://www.instagram.com/tamperees/"
