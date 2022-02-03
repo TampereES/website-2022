@@ -56,4 +56,12 @@ button {
   .btn {
     @apply inline-block text-xl px-5 py-4 duration-200 text-center font-bold rounded-lg;
   }
+
+  .btn.btn-primary {
+    @apply bg-purple-600 text-white hover:bg-purple-700;
+  }
+
+  .btn.btn-secondary {
+    @apply bg-white text-gray-900 hover:bg-gray-100;
+  }
 }
