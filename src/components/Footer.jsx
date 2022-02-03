@@ -42,10 +42,6 @@ const sections = [
       {
         title: "Business Tampere",
         href: "https://businesstampere.com/"
-      },
-      {
-        title: "University of Tampere",
-        href: "https://tuni.fi"
       }
     ]
   },
