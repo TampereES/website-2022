@@ -10,7 +10,7 @@ const Page = ({ children, title, description, picture }) => {
   const router = useRouter()
 
   const pageTitle = `${title} - ${PAGE_NAME}`
-  const pagePicture = `${PAGE_URL}${picture ?? "/icon.png"}`
+  const pagePicture = `${PAGE_URL}${picture ?? "/logo.png"}`
   const pageUrl = `${PAGE_URL}${router.pathname}`
 
   return (
