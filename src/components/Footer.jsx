@@ -7,7 +7,7 @@ const sections = [
       { title: "Home", href: "/", local: true },
       { title: "Projects", href: "/projects", local: true },
       { title: "About", href: "/about", local: true },
-      { title: "Contact", href: "/contact", local: true }
+      { title: "Contact", href: "/about", local: true }
     ]
   },
   {
