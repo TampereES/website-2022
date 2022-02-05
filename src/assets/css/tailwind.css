@@ -6,15 +6,18 @@ html {
   @apply overflow-x-hidden;
 }
 
+body {
+  background-color: #fffdf3;
+}
+
 p,
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
   font-family: "Work Sans", sans-serif;
-}
-
-body {
-  background-color: #fffdf3;
 }
 
 button {
@@ -29,7 +32,6 @@ button {
   .h1,
   .h2,
   .h3 {
-    @apply font-black;
     font-family: "Work Sans", sans-serif;
   }
 
@@ -56,10 +58,10 @@ button {
   }
 
   .btn.btn-primary {
-    @apply bg-purple-600 text-white hover:bg-purple-700;
+    @apply text-white;
   }
 
   .btn.btn-secondary {
-    @apply bg-white text-gray-900 hover:bg-gray-100;
+    @apply bg-white text-gray-900;
   }
 }
