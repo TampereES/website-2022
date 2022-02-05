@@ -9,8 +9,10 @@ const ProjectsPage = ({ content }) => {
         className="w-screen md:px-5 lg:px-20"
         style={{ backgroundColor: "#083d77" }}
       >
-        <div className="section  pt-14 md:pt-20 pb-16 md:pb-24">
-          <h1 className="h1 text-white mb-16 md:mb-20">{content.title}</h1>
+        <div className="container mx-auto px-4 pt-14 md:pt-20 pb-16 md:pb-24">
+          <h1 className="font-bold text-7xl text-white mb-16 md:mb-20">
+            {content.title}
+          </h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             {content.projects.map((entry, index) => (
               <Project

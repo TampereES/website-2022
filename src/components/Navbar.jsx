@@ -29,7 +29,7 @@ const Navbar = () => {
       className="relative bg-white z-40"
       style={{ backgroundColor: "#fffdf3" }}
     >
-      <div className="section flex justify-between items-center py-5 lg:justify-start lg:space-x-10">
+      <div className="container mx-auto px-4 flex justify-between items-center py-5 lg:justify-start lg:space-x-10">
         <div>
           <Link href="/" passHref>
             <button>
