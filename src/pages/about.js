@@ -5,7 +5,6 @@ import Image from "next/image"
 const AboutPage = ({ content }) => {
   return (
     <Page title={content.meta__title} description={content.meta__description}>
-      {/* Large image and desc */}
       <div className="grid grid-cols-1 py-28 lg:grid-cols-2">
         <div className="relative">
           <Image
@@ -16,18 +15,14 @@ const AboutPage = ({ content }) => {
             alt=""
           />
         </div>
+        {/* About page desc */}
         <div
           className="bg-gray-100 text-center sm:text-left py-10 md:py-16 lg:py-25 lg:px-14 text-white"
           style={{ backgroundColor: "#083d77" }}
         >
-          <div className="section">
+          <div className="section my-8">
             <h1 className="h1 mb-8">{content.header__title}</h1>
-            <div
-              className="lead"
-              dangerouslySetInnerHTML={{
-                __html: content.header__description
-              }}
-            />
+            <p className="lead">{content.header__description}</p>
           </div>
         </div>
       </div>
@@ -39,22 +34,24 @@ const AboutPage = ({ content }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 text-center">
           {content.members.map((member, index) => (
             <div key={index} className="bg-gray-100 shadow rounded-lg">
+              {/* Portrait */}
               <Image
                 src={member.picture}
                 alt={member.name}
-                width="600"
-                height="700"
+                width={600}
+                height={700}
                 layout="responsive"
-                className="rounded-t-lg object-cover"
+                className="object-top rounded-t-lg"
+                objectFit="cover"
               />
-              <div className="py-3">
-                <h3 className="lead font-bold">{member.name}</h3>
-              </div>
+              <h3 className="py-3 lead font-bold">{member.name}</h3>
+              {/* Title */}
               <div className="py-2">
                 <h3 className="text-3xl">{member.title}</h3>
               </div>
+              {/* Description */}
               <div className="pt-1 pb-5">
-                <h3 className="text-2xl lg:p-5">{member.description}</h3>
+                <p className="text-2xl lg:p-5">{member.description}</p>
               </div>
             </div>
           ))}
@@ -73,4 +70,3 @@ export const getStaticProps = async () => {
 }
 
 export default AboutPage
-  

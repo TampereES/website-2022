@@ -21,10 +21,6 @@ button {
   @apply outline-none;
 }
 
-.about-bg-image {
-  background-image: url("../images/backgrounds/social.jpg");
-}
-
 @layer utilities {
   .section {
     @apply container mx-auto px-4;
