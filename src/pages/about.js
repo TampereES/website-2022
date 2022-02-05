@@ -21,7 +21,7 @@ const AboutPage = ({ content }) => {
           className="bg-gray-100 text-white py-10 md:py-16 lg:py-25 lg:px-14"
           style={{ backgroundColor: "#083d77" }}
         >
-          <div className="section my-8">
+          <div className="container mx-auto px-4 my-8">
             <h1 className="h1 mb-8">{content.header__title}</h1>
             <p className="lead">{content.header__description}</p>
           </div>
@@ -29,7 +29,7 @@ const AboutPage = ({ content }) => {
       </div>
 
       {/* Board */}
-      <div className="section py-14 md:py-20">
+      <div className="container mx-auto px-4 py-14 md:py-20">
         <h2 className="h2 mb-12 md:mb-16">{content.team__title}</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 text-center">

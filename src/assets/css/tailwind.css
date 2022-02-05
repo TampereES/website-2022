@@ -20,15 +20,7 @@ h6 {
   font-family: "Work Sans", sans-serif;
 }
 
-button {
-  @apply outline-none;
-}
-
 @layer utilities {
-  .section {
-    @apply container mx-auto px-4;
-  }
-
   .h1,
   .h2,
   .h3 {
@@ -53,15 +45,4 @@ button {
 }
 
 @layer components {
-  .btn {
-    @apply inline-block text-xl px-5 py-4 duration-200 text-center font-bold rounded-lg;
-  }
-
-  .btn.btn-primary {
-    @apply text-white;
-  }
-
-  .btn.btn-secondary {
-    @apply bg-white text-gray-900;
-  }
 }
