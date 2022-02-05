@@ -5,19 +5,20 @@ import Image from "next/image"
 const AboutPage = ({ content }) => {
   return (
     <Page title={content.meta__title} description={content.meta__description}>
-      <div className="grid grid-cols-1 py-28 lg:grid-cols-2">
-        <div className="relative">
+      <div className="grid grid-cols-1 lg:grid-cols-2 pb-28">
+        <div className="relative h-96 w-full lg:h-full lg:w-full">
           <Image
             priority
             src={content.aboutPageImage}
             layout="fill"
             objectFit="cover"
+            className="object-center"
             alt=""
           />
         </div>
         {/* About page desc */}
         <div
-          className="bg-gray-100 text-center sm:text-left py-10 md:py-16 lg:py-25 lg:px-14 text-white"
+          className="bg-gray-100 text-white py-10 md:py-16 lg:py-25 lg:px-14"
           style={{ backgroundColor: "#083d77" }}
         >
           <div className="section my-8">
