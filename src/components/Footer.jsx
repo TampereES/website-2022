@@ -58,7 +58,7 @@ const sections = [
 
 const Footer = () => {
   return (
-    <footer className="bg-[#fffdf3]-600 py-8 md:py-12" aria-labelledby="footer-heading">
+    <footer className="bg-white py-8 md:py-12" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
@@ -75,7 +75,7 @@ const Footer = () => {
         >
           {sections.map((section) => (
             <div key={section.title}>
-              <h3 className="text-xl font-bold text-[#083D77] tracking-wider uppercase">
+              <h3 className="text-xl font-bold text-dark-blue tracking-wider uppercase">
                 {section.title}
               </h3>
               <div role="list" className="mt-4 space-y-4">
@@ -85,7 +85,7 @@ const Footer = () => {
                       <Link href={link.href}>
                         <a
                           href={link.href}
-                          className="text-lg text-[#083D77] hover:text-[#083D77]-900"
+                          className="text-lg text-dark-blue hover:text-blue"
                         >
                           {link.title}
                         </a>
@@ -96,7 +96,7 @@ const Footer = () => {
                         href={link.href}
                         target="_blank"
                         rel="noreferrer"
-                        className="text-lg text-gray-600 hover:text-[#083D77]-900"
+                        className="text-lg text-dark-blue hover:text-blue"
                       >
                         {link.title}
                       </a>

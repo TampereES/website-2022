@@ -8,6 +8,11 @@ module.exports = {
     extend: {
       fontFamily: {
         work: ['"Work Sans"', "sans-serif"]
+      },
+      colors: {
+        'white': '#fffdf3',
+        'dark-blue': '#083D77',
+        'blue': '#0C3DFF'
       }
     }
   },
