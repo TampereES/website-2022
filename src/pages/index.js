@@ -3,7 +3,6 @@ import Link from "next/link"
 import Image from "next/image"
 import Project from "../components/Project"
 import { getPage } from "../services/content"
-import Button from "../components/Button"
 
 const HomePage = ({ content, projects }) => {
   return (
@@ -17,7 +16,7 @@ const HomePage = ({ content, projects }) => {
           />
         </div>
 
-        <div className="container mx-auto px-4">
+        <div className="section">
           <div className="max-w-2xl text-center xl:mx-0">
             <h1 className="h1 mb-8 text-left" style={{ color: "#083d77" }}>
               {content.header__title}
@@ -25,29 +24,33 @@ const HomePage = ({ content, projects }) => {
             <p className="lead mb-10 text-left" style={{ color: "#083d77" }}>
               {content.header__description}
             </p>
-            <Button primary className="float-left">
-              <Link href="/projects" passHref>
+            <Link href="/projects" passHref>
+              <button
+                style={{ color: " #fffdf3", backgroundColor: "#083d77" }}
+                className="btn btn-primary float-left"
+              >
                 Learn about our projects
-              </Link>
-            </Button>
+              </button>
+            </Link>
           </div>
         </div>
       </div>
       <div className="pt-20 pb-36" style={{ backgroundColor: "#083d77" }}>
-        <div className="container mx-auto px-4">
+        <div className="section">
           <div className="max-w-2xl text-white">
             <h2 className="h1 mb-8">{content.events__title}</h2>
             <p className="lead mb-10">{content.events__description}</p>
 
-            <Button secondary>
-              <Link
-                href="https://www.instagram.com/tamperees/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Learn more
-              </Link>
-            </Button>
+            {/* <Link href="/projects"> */}
+            <a
+              href="https://www.instagram.com/tamperees/"
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-secondary"
+            >
+              Learn more
+            </a>
+            {/* </Link> */}
           </div>
           <div className="relative">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 text-left mt-12 md:mt-16">
