@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from "./Link.jsx"
 
 const sections = [
   {
@@ -48,10 +48,10 @@ const sections = [
   {
     title: "Get involved",
     links: [
-      { title: "Telegram", href: "/" },
-      { title: "Mail", href: "/" },
-      { title: "News", to: "/news" },
-      { title: "Events", href: "/" }
+      { title: "Telegram", href: "https://t.me/tamperees" },
+      { title: "Mail", href: "mailto:board@tamperees.com" },
+      { title: "News", href: "https://instagram.com/tamperees" },
+      { title: "Events", href: "/projects", local: true }
     ]
   }
 ]
@@ -62,7 +62,7 @@ const Footer = () => {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="section">
+      <div className="container mx-auto px-4">
         <div
           className="
                     grid grid-cols-1
@@ -81,26 +81,17 @@ const Footer = () => {
               <div role="list" className="mt-4 space-y-4">
                 {section.links.map((link, index) => (
                   <div key={index}>
-                    {link.local && (
-                      <Link href={link.href}>
-                        <a
-                          href={link.href}
-                          className="text-lg text-dark-blue hover:text-blue"
-                        >
-                          {link.title}
-                        </a>
-                      </Link>
-                    )}
-                    {!link.local && (
-                      <a
+                    {
+                      <Link
                         href={link.href}
-                        target="_blank"
-                        rel="noreferrer"
                         className="text-lg text-dark-blue hover:text-blue"
+                        target={!link.local && "_blank"}
+                        rel={!link.local && "noreferrer"}
+                        local={link.local}
                       >
                         {link.title}
-                      </a>
-                    )}
+                      </Link>
+                    }
                   </div>
                 ))}
               </div>

@@ -2,34 +2,28 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-p,
-h1,
-h2,
-h3 {
-  font-family: "Work Sans", sans-serif;
+html {
+  @apply overflow-x-hidden;
 }
 
 body {
   background-color: #fffdf3;
 }
 
-button {
-  @apply outline-none;
-}
-
-.about-bg-image {
-  background-image: url("../images/backgrounds/social.jpg");
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Work Sans", sans-serif;
 }
 
 @layer utilities {
-  .section {
-    @apply container mx-auto px-4;
-  }
-
   .h1,
   .h2,
   .h3 {
-    @apply font-black;
     font-family: "Work Sans", sans-serif;
   }
 
@@ -51,15 +45,4 @@ button {
 }
 
 @layer components {
-  .btn {
-    @apply inline-block text-xl px-5 py-4 duration-200 text-center font-bold rounded-lg;
-  }
-
-  .btn.btn-primary {
-    @apply bg-purple-600 text-white hover:bg-purple-700;
-  }
-
-  .btn.btn-secondary {
-    @apply bg-white text-gray-900 hover:bg-gray-100;
-  }
 }
