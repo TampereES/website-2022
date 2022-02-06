@@ -130,7 +130,7 @@ const NavLink = ({ children, href }) => {
   const isActive = false
 
   const classes = classNames(
-    "text-2xl font-medium text-gray-600 hover:text-gray-900",
+    "text-2xl font-medium text-dark-blue hover:text-blue",
     isActive && "font-bold"
   )
 

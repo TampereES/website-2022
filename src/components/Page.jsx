@@ -3,7 +3,7 @@ import Footer from "./Footer"
 import Head from "next/head"
 import { useRouter } from "next/router"
 
-export const PAGE_NAME = "TampereES"
+export const PAGE_NAME = "Tampere Entrepreneurship Society"
 export const PAGE_URL = "https://www.tamperees.com"
 
 const Page = ({ children, title, description, picture }) => {

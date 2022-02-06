@@ -1,5 +1,5 @@
 ---
-title: Projects
+title: Projects.
 projects:
   - template: Summer of startups
     title: The startup experience
@@ -11,7 +11,7 @@ projects:
       their product, growing their business or general operations. Students hired would
       match the demand and program."
   - template: Content room
-    title: Content room
+    title: Creators
     description:
       The place for all the content creators of Tampere universities. Podcasts,
       online events, photoshoots, you name it. By booking a time you can access all
