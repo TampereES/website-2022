@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  background-color: #fffdf3;  
+  background-color: #fffdf3;
 }
 
 h1,
@@ -20,7 +20,7 @@ h6 {
 }
 
 h1 {
-  @apply text-4xl md:text-6xl xl:text-7xl;
+  @apply text-4xl md:text-6xl xl:text-7xl font-bold;
 }
 
 h2 {
