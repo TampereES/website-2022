@@ -19,7 +19,7 @@ const HomePage = ({ content, projects }) => {
 
         <div className="container mx-auto px-4">
           <div className="max-w-2xl text-center xl:mx-0">
-            <h1 className="h1 mb-8 text-left" style={{ color: "#083d77" }}>
+            <h1 className="mb-8 text-left" style={{ color: "#083d77" }}>
               {content.header__title}
             </h1>
             <p className="lead mb-10 text-left" style={{ color: "#083d77" }}>
@@ -36,7 +36,7 @@ const HomePage = ({ content, projects }) => {
       <div className="pt-20 pb-36" style={{ backgroundColor: "#083d77" }}>
         <div className="container mx-auto px-4">
           <div className="max-w-2xl text-white">
-            <h2 className="h1 mb-8">{content.events__title}</h2>
+            <h1 className="mb-8">{content.events__title}</h1>
             <p className="lead mb-10">{content.events__description}</p>
 
             <Button secondary>
