@@ -1,41 +1,31 @@
 ---
-header__title: About
+header__title: Meaningful opportunities.
 header__description:
-  "Tre.es is a student-run entrepreneurship society that encourages
-  inspired people to take action. We want to cultivate a fearless environment where
-  people aren’t afraid to chase their dreams.  \n  \nTre.es serves its community by
-  supporting student-run projects, organizing events and activities, and helping them
-  create a network that lasts a lifetime."
+  "Our mission is to encourage inspired people to take action. Providing them with meaningful opportunities for self-development, by giving them responsibility for organizing events, projects and networking opportunities. 
+  
+  We facilitate that process."
 team__title: Board 2022 - these are the people behind our daily operations
 members:
-  - name: Krister Alasaarela
+  - name: Krister Alasaarela, Chairman
     picture: "/media/pc270985.jpg"
     title: Chairman
     description:
-      B.Sc. student in computer science from Tampere University. Former Aaltoes
-      Team member and business development consultant.   Organized an event in 2019
-      with over 400 applications from startups and venture capital firms from around
-      the world.
-  - name: Jenni Toivonen
+      krister.alasaarela(at)tamperees.com
+  - name: Jenni Toivonen, Finance
     picture: "/media/pc270981.jpg"
     title: Finance
     description:
-      M.Sc. student in Business Administration from Tampere University.   Former
-      professional dancer and experienced from educational affairs, finance & sales.  Member
-      of Slush fall team 2021.
-  - name: Coral Nguyen
+      jenni.toivonen(at)tamperees.com
+  - name: Coral Nguyen, Art
     picture: "/media/pc270968.jpg"
     title: Art
     description:
-      B.A. student in Interactive Media from Tampere University.   Designed
-      digital artworks and products for events for over 4 years.
-  - name: Eemil Hinkka
+      coral.nguyen(at)tamperees.com
+  - name: Eemil Hinkka, Partnerships
     picture: "/media/pc270959.jpg"
     title: Partnerships
     description:
-      1st year entrepreneurial-minded business student from TAMK.  Prior
-      experience with organizing events and sales. Interested in partnerships and project
-      management.
+      eemil.hinkka(at)tamperees.com
 meta__title: About
 meta__description:
   Tre.es is a student-run entrepreneurship society that encourages
