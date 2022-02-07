@@ -1,5 +1,5 @@
 ---
-title: Projects.
+title: Projects
 projects:
   - template: Summer of startups
     title: The startup experience
