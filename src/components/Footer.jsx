@@ -84,7 +84,7 @@ const Footer = () => {
                     {
                       <Link
                         href={link.href}
-                        className="text-lg text-dark-blue hover:text-blue"
+                        className=""
                         target={!link.local && "_blank"}
                         rel={!link.local && "noreferrer"}
                         local={link.local}

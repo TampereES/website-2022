@@ -10,7 +10,6 @@ body {
   background-color: #fffdf3;
 }
 
-p,
 h1,
 h2,
 h3,
@@ -20,29 +19,18 @@ h6 {
   font-family: "Work Sans", sans-serif;
 }
 
-@layer utilities {
-  .h1,
-  .h2,
-  .h3 {
-    font-family: "Work Sans", sans-serif;
-  }
-
-  .h1 {
-    @apply text-4xl md:text-6xl xl:text-7xl;
-  }
-
-  .h2 {
-    @apply text-3xl md:text-5xl xl:text-6xl;
-  }
-
-  .h3 {
-    @apply text-2xl md:text-4xl xl:text-5xl;
-  }
-
-  .lead {
-    @apply text-xl md:text-2xl xl:text-3xl;
-  }
+h1 {
+  @apply text-4xl md:text-6xl xl:text-7xl font-bold;
 }
 
-@layer components {
+h2 {
+  @apply text-3xl md:text-5xl xl:text-6xl;
+}
+
+h3 {
+  @apply text-2xl md:text-4xl xl:text-5xl;
+}
+
+.lead {
+  @apply text-xl md:text-2xl xl:text-3xl;
 }
