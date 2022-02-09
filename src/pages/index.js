@@ -52,13 +52,17 @@ const HomePage = ({ content }) => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-12 lg:mt-16">
               {content.events.map((event, index) => (
                 <div key={event.index} className="">
-                  <Image
-                    className="rounded-lg"
-                    src={event.image}
-                    width={1000}
-                    height={1000}
-                    alt="event"
-                  />
+                  <button>
+                    <Link href={event.url || "#"}>
+                      <Image
+                        className="rounded-lg"
+                        src={event.image}
+                        width={1000}
+                        height={1000}
+                        alt="event"
+                      />
+                    </Link>
+                  </button>
                 </div>
               ))}
             </div>
