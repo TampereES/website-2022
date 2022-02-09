@@ -1,11 +1,10 @@
 import Page from "../components/Page"
 import Link from "next/link"
 import Image from "next/image"
-import Project from "../components/Project"
 import { getPage } from "../services/content"
 import Button from "../components/Button"
 
-const HomePage = ({ content, projects }) => {
+const HomePage = ({ content }) => {
   return (
     <Page title={content.meta__title} description={content.meta__description}>
       <div className="pt-24 pb-32 xl:pt-40 xl:pb-72 relative">
@@ -50,13 +49,21 @@ const HomePage = ({ content, projects }) => {
             </Button>
           </div>
           <div className="relative">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 text-left mt-12 md:mt-16">
-              {projects.projects.map((entry, index) => (
-                <Project
-                  key={index}
-                  title={entry.title}
-                  description={entry.description}
-                />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-12 lg:mt-16">
+              {content.events.map((event, index) => (
+                <div key={event.index} className="shadow">
+                  <button>
+                    <Link href={event.url || "#"}>
+                      <Image
+                        className="rounded-lg"
+                        src={event.image}
+                        width={1000}
+                        height={1000}
+                        alt="event"
+                      />
+                    </Link>
+                  </button>
+                </div>
               ))}
             </div>
           </div>
@@ -68,10 +75,9 @@ const HomePage = ({ content, projects }) => {
 
 export const getStaticProps = async () => {
   const content = getPage("index")
-  const projects = getPage("projects")
 
   return {
-    props: { content, projects }
+    props: { content }
   }
 }
 

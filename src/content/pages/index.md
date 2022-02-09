@@ -12,4 +12,10 @@ meta__title: Home
 meta__description:
   Tre.es is a student-run entrepreneurship society that encourages
   inspired people to take action.
+
+events:
+  - image: "/media/coding-sauna.png"
+    url: "" 
+  - image: "/media/show-up.png"
+    url: "" 
 ---
