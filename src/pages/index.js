@@ -50,13 +50,17 @@ const HomePage = ({ content, projects }) => {
             </Button>
           </div>
           <div className="relative">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 text-left mt-12 md:mt-16">
-              {projects.projects.map((entry, index) => (
-                <Project
-                  key={index}
-                  title={entry.title}
-                  description={entry.description}
-                />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 text-left w-full mt-12 md:mt-16">
+              {content.events.map((event, index) => (
+                <div key={event.index} className="">
+                  <img
+                    className="rounded-lg"
+                    src={event.image}
+                    layout="fill"
+                    objectFit="contain"
+                    alt="event"
+                  ></img>
+                </div>
               ))}
             </div>
           </div>
@@ -68,10 +72,9 @@ const HomePage = ({ content, projects }) => {
 
 export const getStaticProps = async () => {
   const content = getPage("index")
-  const projects = getPage("projects")
 
   return {
-    props: { content, projects }
+    props: { content }
   }
 }
 
