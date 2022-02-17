@@ -35,9 +35,7 @@ const Page = ({ children, title, description, picture }) => {
         <link rel="canonical" href={pageUrl} />
       </Head>
       <Navbar />
-
-      {children}
-
+      <div className="pt-28">{children}</div>
       <Footer />
     </>
   )
