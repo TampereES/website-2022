@@ -11,6 +11,9 @@ const ProjectsPage = ({ content }) => {
     <Page title={content.meta__title} description={content.meta__description}>
       {activeCard && (
         <ProjectCard
+          closeCard={() => {
+            setActiveCard(null)
+          }}
           title={activeCard.title}
           description={activeCard.description}
           links={activeCard.links}
