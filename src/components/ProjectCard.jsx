@@ -15,7 +15,7 @@ function ProjectCard({ closeCard, title, description, links }) {
   }, [])
 
   return (
-    <div className="z-30 fixed ">
+    <div className="top-0 z-30 fixed">
       <div className="pt-52 w-screen h-screen bg-opacity-75 bg-gray-700">
         <div className="container mx-auto max-w-4xl bg-white text-dark-blue rounded-lg justify-center">
           <OutsideAlerter onClick={closeCard}>
