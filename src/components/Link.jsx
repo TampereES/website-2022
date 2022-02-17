@@ -9,23 +9,16 @@ export default function Link({
   className,
   rel
 }) {
-  //  color: "#",
-
-  const classes = "text-dark-blue hover:text-blue"
+  const classes = "text-dark-blue hover:text-blue " + className
 
   if (local)
     return (
       <NextLink href={href} target={target} rel={rel} passHref>
-        <a className={classes + " " + className}>{children}</a>
+        <a className={classes}>{children}</a>
       </NextLink>
     )
   return (
-    <a
-      href={href}
-      target={target}
-      rel={rel}
-      className={classes + " " + className}
-    >
+    <a href={href} target={target} rel={rel} className={classes}>
       {children}
     </a>
   )

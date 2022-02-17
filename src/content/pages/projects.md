@@ -32,6 +32,8 @@ projects:
     links:
     - url: "#"
       text: "More about coding sauna"
+    - url: "#"
+      text: "Another link"
   - template: KUBE
     title: KUBE
     description:

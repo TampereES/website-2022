@@ -26,7 +26,7 @@ const links = [
 const Navbar = () => {
   return (
     <Popover
-      className="relative bg-white z-40"
+      className="fixed w-screen bg-white z-10"
       style={{ backgroundColor: "#fffdf3" }}
     >
       <div className="container mx-auto px-4 flex justify-between items-center py-5 lg:justify-start lg:space-x-10">

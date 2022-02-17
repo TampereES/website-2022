@@ -1,10 +1,21 @@
 import Page from "../components/Page"
 import { getPage } from "../services/content"
 import Project from "../components/Project"
+import ProjectCard from "../components/ProjectCard"
+import React, { useState } from "react"
 
 const ProjectsPage = ({ content }) => {
+  const [activeCard, setActiveCard] = useState()
+
   return (
     <Page title={content.meta__title} description={content.meta__description}>
+      {activeCard && (
+        <ProjectCard
+          title={activeCard.title}
+          description={activeCard.description}
+          links={activeCard.links}
+        />
+      )}
       <div
         className="w-screen md:px-5 lg:px-20"
         style={{ backgroundColor: "#fffdf3" }}
@@ -19,7 +30,13 @@ const ProjectsPage = ({ content }) => {
                 key={index}
                 title={entry.title}
                 description={entry.description}
-                link={entry.link}
+                onClick={() =>
+                  setActiveCard({
+                    title: entry.title,
+                    description: entry.description,
+                    links: entry.links
+                  })
+                }
               />
             ))}
           </div>
