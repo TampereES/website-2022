@@ -25,10 +25,10 @@ projects:
   - template: Coding sauna
     title: Coding sauna
     description:
-      "Coding sauna  is a weekly gathering of people interested in coding,
+      "Coding sauna is a weekly gathering of people interested in coding.
       The aim of these gatherings is getting to know new technologies, discussing and
       introducing interesting tech-topics, and networking with other people. The gathering
-      consists on  short prresentations/discussions (app. 20-30 mins) and sauna. "
+      consists on short presentations/discussions (app. 20-30 mins) and sauna."
     links:
     - url: "#"
       text: "More about coding sauna"
