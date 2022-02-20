@@ -10,12 +10,12 @@ members:
     picture: "/media/pc270985.jpg"
     title: Chairman
     description:
-      krister.alasaarela@tamperees.com 
+      krister.alasaarela@tamperees.com
   - name: Jenni Toivonen, Finance
     picture: "/media/pc270981.jpg"
     title: Finance
     description:
-      jenni.toivonen@tamperees.com 
+      jenni.toivonen@tamperees.com
   - name: Coral Nguyen, Art
     picture: "/media/pc270968.jpg"
     title: Art

@@ -11,8 +11,8 @@ projects:
       their product, growing their business or general operations. Students hired would
       match the demand and program."
     links:
-    - url: "https://forms.gle/jtNt6CiPqkT9SMaY8"
-      text: "Learn more and apply"
+    - url: "#"
+      text: "More about coding sauna"
   - template: Content room
     title: Creators
     description:
