@@ -29,33 +29,34 @@ function ProjectCard({ closeCard, title, description, links }) {
   return (
     <div className="top-0 z-30 fixed flex flex-col justify-center h-screen w-screen bg-opacity-75 bg-gray-700">
       <div className="flex justify-center mx-5">
-        <div className="my-10 max-w-4xl bg-white text-dark-blue  rounded-lg overflow-scroll">
-          <div className="p-10" ref={ref}>
-            <h1 className="font-bold mb-5 text-xl sm:text-5xl lg:text-6xl lg:mb-10">
-              {title}
-            </h1>
-            <p className="text-sm sm:text-2xl md:leading-9">{description}</p>
-            {links?.length > 0 && (
-              <div className="justify-around md:flex md:gap-3 mt-5">
-                {links &&
-                  links.map((link) => {
-                    return (
-                      <Link
-                        key={link.text}
-                        href={link.url}
-                        className="block py-2 lg:py-4 border-2 border-white  bg-dark-blue  rounded-lg w-full text-center"
-                      >
-                        <button>
-                          <span className="text-white text-sm sm:text-xl font-bold overflow-x-hidden">
-                            {link.text}
-                          </span>
-                        </button>
-                      </Link>
-                    )
-                  })}
-              </div>
-            )}
-          </div>
+        <div
+          ref={ref}
+          className="bg-white rounded-lg p-10 my-10 max-w-4xl text-dark-blue"
+        >
+          <h1 className="font-bold mb-5 text-xl sm:text-5xl lg:text-6xl lg:mb-10">
+            {title}
+          </h1>
+          <p className="text-sm sm:text-2xl md:leading-9">{description}</p>
+          {links?.length > 0 && (
+            <div className="justify-around md:flex md:gap-3 mt-5">
+              {links &&
+                links.map((link) => {
+                  return (
+                    <Link
+                      key={link.text}
+                      href={link.url}
+                      className="block py-2 lg:py-4 border-2 border-white bg-dark-blue rounded-lg w-full text-center"
+                    >
+                      <button>
+                        <span className="text-white text-sm sm:text-xl font-bold overflow-x-hidden">
+                          {link.text}
+                        </span>
+                      </button>
+                    </Link>
+                  )
+                })}
+            </div>
+          )}
         </div>
       </div>
     </div>
