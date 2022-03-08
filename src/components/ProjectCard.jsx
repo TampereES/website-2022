@@ -35,26 +35,28 @@ function ProjectCard({ closeCard, title, description, links }) {
               {title}
             </h1>
             <p className="text-sm sm:text-2xl md:leading-9">{description}</p>
-            <div className="justify-around md:flex md:gap-3  mt-5  lg:my-5">
-              {links &&
-                links.map((link) => {
-                  return (
-                    <>
-                      <Link
-                        key={link.url}
-                        href={link.url}
-                        className="block py-2 border-2 border-white  bg-dark-blue  rounded-lg w-full text-center"
-                      >
-                        <button>
-                          <span className="m-5 text-white text-sm   sm:text-xl font-bold overflow-x-hidden">
-                            {link.text}
-                          </span>
-                        </button>
-                      </Link>
-                    </>
-                  )
-                })}
-            </div>
+            {links?.length > 0 && (
+              <div className="justify-around md:flex md:gap-3  mt-5 lg:my-5">
+                {links &&
+                  links.map((link) => {
+                    return (
+                      <>
+                        <Link
+                          key={link.url}
+                          href={link.url}
+                          className="block py-2 border-2 border-white  bg-dark-blue  rounded-lg w-full text-center"
+                        >
+                          <button>
+                            <span className="m-5 text-white text-sm   sm:text-xl font-bold overflow-x-hidden">
+                              {link.text}
+                            </span>
+                          </button>
+                        </Link>
+                      </>
+                    )
+                  })}
+              </div>
+            )}
           </div>
         </div>
       </div>
