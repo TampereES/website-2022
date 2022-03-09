@@ -1,7 +1,6 @@
 ---
 header__title: Encouraging inspired people to take action.
-header__description:
-  TRE.ES is a student-run entrepreneurship society that encourages
+header__description: TRE.ES is a student-run entrepreneurship society that encourages
   inspired people to take action.
 events__title: What's next?
 events__description: |-
@@ -9,13 +8,14 @@ events__description: |-
 
   Here are some of our events that you can join.
 meta__title: Home
-meta__description:
-  Tre.es is a student-run entrepreneurship society that encourages
+meta__description: Tre.es is a student-run entrepreneurship society that encourages
   inspired people to take action.
-
 events:
-  - image: "/media/coding-sauna.png"
-    url: "" 
-  - image: "/media/show-up.png"
-    url: "" 
+- image: "/media/explore-startups-1.png"
+  url: https://forms.gle/2B6JfAJBouELYhVF7
+- image: "/media/coding-sauna.png"
+  url: ''
+- image: "/media/show-up.png"
+  url: ''
+
 ---
