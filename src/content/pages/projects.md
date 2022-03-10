@@ -15,7 +15,9 @@ projects:
   description: The place for all the content creators of Tampere universities. Podcasts,
     online events, photoshoots, you name it. By booking a time you can access all
     the tools content creator needs. Located in Platform 6 next to main campus.
-  links: 
+  links:
+  - url: https://forms.gle/yuiXXHDHXb5ursex9
+    text: Learn more and get started!
 - title: Coding sauna
   description: Coding sauna is a weekly gathering of people interested in coding.
     The aim of these gatherings is getting to know new technologies, discussing and
